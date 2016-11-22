@@ -1,0 +1,109 @@
+    static int count(String s) {
+        if (s.length() == 1) return 0;
+        return recursion(s, 0);
+    }
+
+    static int recursion(String s, int count){
+        if (s.length()==1) return count ;
+
+        String sub = s.substring( 1,  s.length() );
+        int index = 0;
+        char init = s.charAt(index);
+        char oppo;
+        while (init == s.charAt(index) &&( index < s.length() )){
+            index++ ;
+        }
+
+        if (index == s.length()){
+            return recursion(sub, count);
+        }
+
+        int nindex = index;
+        oppo = s.charAt(nindex);
+        while ( (nindex < s.length()) && (oppo == s.charAt(nindex) )  ){
+
+            nindex++;
+            if (nindex == 2*index){
+                return recursion( sub, count+1);
+            }
+            if (nindex > 2*index){
+                return recursion( sub ,count);
+            }
+        }
+        return recursion(sub,count);
+
+    }
+
+    public static class  ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) { val = x; }
+    }
+
+
+
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode result = new ListNode(0);
+        long n1 = 0;
+        long  n2 = 0;
+        int count = 0;
+        ListNode track = result;
+        ListNode c1 = l1;
+        ListNode c2 = l2;
+
+        while( c1 != null && c2!= null){
+            int factor = (int)Math.pow(10,count);
+            n1 = n1 + factor * c1.val;
+
+            n2 = n2 + factor * c2.val;
+            count++;
+            c1 = c1.next;
+            c2 = c2.next;
+        }
+        while (c1 !=null){
+            n1 = n1 + (long)Math.pow(10,count) * c1.val;
+            count++;
+            c1 = c1.next;
+        }
+        while (c2 !=null){
+            n2 = n2 + (long)Math.pow(10,count) * c2.val;
+            count++;
+            c2 = c2.next;
+        }
+
+        long sum = n1 + n2;
+        boolean fill_zero = false;
+        if (sum == 0){
+            result.next = new ListNode(0);
+            return result.next;
+        }
+        else {
+            int upper = (int) (sum / 10000000000l);
+            long tmp = upper * 10000000000l;
+            int lower = (int) (sum -   tmp );
+
+            if(lower ==0){ fill_zero = true;}
+            upper = (int) (sum / Math.pow(10, 10));
+
+            while (upper >= 1) {
+                track.next = new ListNode((int) upper % 10);
+                upper = upper / 10;
+                track = track.next;
+            }
+
+            if(!fill_zero){
+            while(lower>=1){
+                track.next = new ListNode((int) lower % 10);
+                lower = lower / 10;
+                track = track.next;
+            }}
+            else{
+                int decrease = 10;
+                while( decrease > 0){
+                    track.next = new ListNode(0);
+                    track = track.next;
+                }
+            }
+        }
+        return result.next;
+    }
