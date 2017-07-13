@@ -44,6 +44,7 @@ public class SlidingWindow {
 
         Deque <Integer> mDeque= new ArrayDeque<Integer>();
 
+        // First k-element iteration
         for (int i =0; i<k;i++){
             addDeque(mDeque, nums[i]);
         }

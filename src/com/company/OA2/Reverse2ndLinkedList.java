@@ -33,6 +33,8 @@ public class Reverse2ndLinkedList {
                 fast = fast.next.next;
                 slow = slow.next;
         }
+
+        // Remember NCPC!!!!!
         ListNode currNode = slow.next;
         ListNode prevNode = null;
         ListNode nextNode ;

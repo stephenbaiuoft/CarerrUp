@@ -46,6 +46,7 @@ public class OverlapRectangle {
         // A to G's right or E to C's right to avoid X
         // Similarly B(bottom!!!) >= H or F>= D
         if ( (A >= G ) ||(E >= C) ||( B>=H ) ||(F >= D) ){
+            // no overlap here: far left vs far right
             return (C-A)*(D-B) + (G-E)*(H-F);
         }else{
             //prevents points

@@ -76,6 +76,10 @@ public class comparatorexample {
         }
         System.out.println("After sorting\t\n\n");
         Arrays.sort(player);
+
+        mycomparator com = new mycomparator();
+        Arrays.sort(player, com);
+
         for(int i = 0; i < player.length; i++){
             System.out.printf("%s %s\n", player[i].name, player[i].score);
         }

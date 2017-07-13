@@ -3,11 +3,15 @@ package com.company.OA2;
 /**
  * Created by stephenbai on 2016-11-18.
  */
+// get total number of arithmatic sequences
 public class ArithmaticSequence {
     public ArithmaticSequence(){
-        int[] t = {1,2,3,4,5};
-        numberofArithMaticSequence(t);
+        int[] t = {1,2,3,4,5,9,10,11,12,13,14,15};
+        //numberofArithMaticSequence(t);
+
+        System.out.print ( fasterNumberofArithMaticSequence(t) );
     }
+
     public int numberofArithMaticSequence(int[]A){
         if (A.length < 3){
             return 0;

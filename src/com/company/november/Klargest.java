@@ -26,7 +26,7 @@ public class Klargest {
 
     public Klargest(){
         int[] t = {8,3,5,10,23};
-        int k = 3;
+        int k = 2;
         findKthLargest(t, k);
     }
 
@@ -36,9 +36,10 @@ public class Klargest {
         // kth largest means first (l - k) + 1 from left to right
         int l = nums.length - k + 1;
         for (int i =0; i< nums.length; i++){
-            addNum(nums[i], (i+1), l);
+            //addNum(nums[i], (i+1), l);
+            addNumNew(nums[i], k);
         }
-        System.out.println(leftQueue.peek());
+        System.out.println(rightQueue.peek());
     }
 
     public void addNum(int num, int count, int k){
@@ -68,12 +69,15 @@ public class Klargest {
     public void addNumNew(int num,  int k){
         // Queue with max @ top
         // always insert, when count is less than k
-        if (leftQueue.size() <= k){
-            leftQueue.add(num);
+        if (rightQueue.size() < k){
+            rightQueue.add(num);
         }
         // more nums now
         else{
-
+            if  ( rightQueue.peek() < num ){
+                rightQueue.poll();
+                rightQueue.add(num);
+            }
         }
 
     }

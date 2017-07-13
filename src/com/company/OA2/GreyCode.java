@@ -9,6 +9,8 @@ public class GreyCode {
         byte result =(byte) (term1 ^ term2);
         for (int i=0; i<8;i++){
             byte bitCheck =(byte) (1 <<i ) ;{
+                // here is converted to result
+                // check every bit position
                 if (bitCheck == result)
                     return 1;
             }

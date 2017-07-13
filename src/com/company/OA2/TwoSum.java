@@ -5,6 +5,9 @@ import java.util.HashMap;
 /**
  * Created by stephenbai on 2016-11-18.
  */
+
+// http://www.jianshu.com/p/6ba6edd52442
+
 public class TwoSum {
     public TwoSum(int[] nums, int target){
         twoSum(nums, target);

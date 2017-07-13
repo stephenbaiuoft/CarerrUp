@@ -25,7 +25,7 @@ public class KClostPoint {
         PriorityQueue<Point> mQueue = new PriorityQueue<Point>( new Comparator<Point>() {
             @Override
             public int compare(Point o1, Point o2) {
-                // ascending order is o1 - o2, so smallest on first items
+                // ascending order is o1 - o2, so smallest on first items!!!
                 // so Now IT IS Descending!!!!!!! with Max on Top
                  return (int ) (getDistance(o2, Origin) - getDistance(o1, Origin));
             }
