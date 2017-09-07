@@ -3,6 +3,57 @@ package com.company.DynamicProgramming;
 /**
  * Created by stephenbai on 2016-11-15.
  */
+
+// Dynamic Programming 2017.07
+public class LongestPalindrome {
+    private String input;
+    public LongestPalindrome(String input){
+        if(input!=null){
+        this.input = input;
+        System.out.println("longest palindrome is: " +  getLongest());
+        }
+
+    }
+
+    public String getLongest(){
+        int longest = 1;
+        String palindrome = this.input.substring(0,1);
+        for (int i=0; i < this.input.length(); i++){
+            String str1 = centreExpand(i,i);
+            String str2 = centreExpand(i,i+1);
+
+            if (str2.length() >=str1.length()
+                    && str2.length() > longest
+                    ){
+                longest = str2.length();
+                palindrome = str2;
+
+            }else if (str1.length() > str2.length()
+                    && str1.length() > longest
+                    ){
+                longest = str1.length();
+                palindrome = str1;
+            }
+        }
+        return palindrome;
+    }
+
+    private String centreExpand(int left, int right){
+        while(   right < this.input.length() &&
+                left >= 0 &&
+                this.input.charAt(left) == this.input.charAt(right)
+
+                ){
+            left--;
+            right++;
+        }
+        return this.input.substring(left + 1, right );
+    }
+
+
+}
+
+/* Previous Solutoin
 public class LongestPalindrome {
     public int [][]indexStorage;
     public int strLen;
@@ -10,7 +61,6 @@ public class LongestPalindrome {
     public LongestPalindrome(String input){
         strLen = input.length();
         getString(input);
-
     }
 
     public void getString(String input){
@@ -91,5 +141,5 @@ public class LongestPalindrome {
 
 
 }
-
+*/
 

@@ -27,10 +27,6 @@ public class IntegerDivision {
         }
 
 
-
-
-
-
         int result = 0;
         // count is to keep track
         int count = 0;
@@ -47,7 +43,6 @@ public class IntegerDivision {
             ldividend = ldividend - tDivisor;
         }
 
-
         while( ldividend >= ldivisor){
             ldividend = ldividend - ldivisor;
             result ++;
@@ -57,7 +52,6 @@ public class IntegerDivision {
 
         if (sign) return (-1) * result;
         return result;
-
     }
 
 }

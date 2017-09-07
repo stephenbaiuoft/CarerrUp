@@ -7,6 +7,15 @@ import java.util.Deque;
 /**
  * Created by stephenbai on 2016-11-17.
  */
+/*
+*
+*         int [] ary = {1,3,1,2,0,5};
+        SlidingWindow_239_H program = new SlidingWindow_239_H();
+        program.maxSlidingWindow(ary, 3);
+
+        SlidingWindow program2 = new SlidingWindow(ary, 3);
+
+                */
 
 //        int nums[] = {1, -1};
 //  SlidingWindow mTest = new SlidingWindow(nums,1);
@@ -14,6 +23,9 @@ public class SlidingWindow {
     public SlidingWindow(int[] nums, int k){
         maxSlidingWindow(nums, k);
     }
+
+    //[4,3,11]
+
 
     // add
     void addDeque( Deque<Integer> mDeque, int num ){
@@ -44,14 +56,25 @@ public class SlidingWindow {
 
         Deque <Integer> mDeque= new ArrayDeque<Integer>();
 
-        // First k-element iteration
-        for (int i =0; i<k;i++){
+//        // First k-element iteration
+//        for (int i =0; i<k;i++){
+//            addDeque(mDeque, nums[i]);
+//        }
+//
+//        result[0] = mDeque.peekFirst();
+//        removeDeque(mDeque, nums[0]);
+//        for (int i = k; i < nums.length; i++){
+//            addDeque(mDeque, nums[i]);
+//            result[i-k+1] = mDeque.peekFirst();
+//            // check left window
+//            removeDeque(mDeque, nums[i-k+1]);
+//        }
+
+        for (int i =0; i<k -1;i++){
             addDeque(mDeque, nums[i]);
         }
 
-        result[0] = mDeque.peekFirst();
-        removeDeque(mDeque, nums[0]);
-        for (int i = k; i < nums.length; i++){
+        for (int i = k -1; i < nums.length; i++){
             addDeque(mDeque, nums[i]);
             result[i-k+1] = mDeque.peekFirst();
             // check left window
