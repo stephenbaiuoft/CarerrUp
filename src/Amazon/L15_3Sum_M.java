@@ -15,6 +15,13 @@ import java.util.*;
  [-1, 0, 1],
  [-1, -1, 2]
  ]
+
+                Test
+ L15_3Sum_M program = new L15_3Sum_M();
+ int[] nums = {
+ -1,0,1,2,-1,-4};
+ program.threeSum(nums);
+
  */
 
 // Handle duplicates: sort and c if first target has reported!!
