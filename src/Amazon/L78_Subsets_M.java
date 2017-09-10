@@ -40,9 +40,10 @@ public class L78_Subsets_M {
     public List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> solutionSet = new LinkedList<>();
         LinkedList<Integer> solution = new LinkedList<>();
-
         backTrack(nums, 0, solutionSet, solution);
+
         return solutionSet;
+
     }
 
     private void backTrack(int[] nums, int index, List<List<Integer>> solutionSet,
@@ -57,5 +58,6 @@ public class L78_Subsets_M {
             // the alternative first piece
             solution.removeLast();
         }
+
     }
 }
