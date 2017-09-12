@@ -32,8 +32,8 @@ public class IntegerDivision {
         int count = 0;
         long ldivisor = Math.abs( (long) divisor);
         long ldividend = Math.abs( (long) dividend);
-
         long tDivisor = ldivisor;
+
         if ( ldividend > tDivisor){
             count = 1;
             while( ldividend > (tDivisor <<1) ){
