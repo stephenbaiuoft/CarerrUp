@@ -57,7 +57,7 @@ class Graph
     class subset
     {
         int parent, rank;
-    };
+    }
 
     int V, E; // V-> no. of vertices & E->no.of edges
     Edge edge[]; // collection of all edges

@@ -32,8 +32,9 @@ public class MinimumPathSum {
                     D[j] = Math.min(D[j], D[j - 1])
                             + grid[i ][j];
                 }
+            }
+        return D[gCol-1];
         }
-        return D[gCol-1];}
         else{
             int sum = 0;
             for (int i = 0 ; i < gRow; i++){

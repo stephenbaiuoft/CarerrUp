@@ -1,7 +1,10 @@
 package com.company.javaClass;
 
+import javafx.scene.layout.Priority;
+
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.PriorityQueue;
 import java.util.Scanner;
 
 /**
@@ -75,10 +78,26 @@ public class comparatorexample {
             System.out.printf("%s %s\n", player[i].name, player[i].score);
         }
         System.out.println("After sorting\t\n\n");
-        Arrays.sort(player);
+        // Arrays.sort(player);
+
+        PriorityQueue<Player> queue = new PriorityQueue<>(new mycomparator());
+//        PriorityQueue<Player> queue2 = new PriorityQueue<>(new Comparator<Player>() {
+//            @Override
+//            public int compare(Player o1, Player o2) {
+//                return 0;
+//            }
+//        });
 
         mycomparator com = new mycomparator();
         Arrays.sort(player, com);
+
+        for(int i = 0; i < player.length; i++){
+            System.out.printf("%s %s\n", player[i].name, player[i].score);
+        }
+
+
+        System.out.println("Now reverse the custom comparator");
+        Arrays.sort(player, com.reversed());
 
         for(int i = 0; i < player.length; i++){
             System.out.printf("%s %s\n", player[i].name, player[i].score);

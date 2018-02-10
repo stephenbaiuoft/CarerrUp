@@ -8,24 +8,19 @@ package Amazon;
 
 public class L204_CountPrimes_E {
     public int countPrimes(int n) {
-        int[] track = new int[n];
-        int count = 0;
+        // having this function here is a lot quicker
 
-        for(int i = 2; i < n; i ++){
-            if(track[i]==0){
-                count ++;
-                mark(i, track, n);
+        boolean[] notPrime = new boolean[n];
+        int count = 0;
+        for (int i = 2; i < n; i++) {
+            if (notPrime[i] == false) {
+                count++;
+                for (int j = 2; i*j < n; j++) {
+                    notPrime[i*j] = true;
+                }
             }
         }
 
         return count;
-    }
-
-    private void mark(int startIndex, int[] record, int n ){
-        int i = 2;
-        while(startIndex * i < n){
-            record[startIndex * i ] = -1;
-            i++;
-        }
     }
 }

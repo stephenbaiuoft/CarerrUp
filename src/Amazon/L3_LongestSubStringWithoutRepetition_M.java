@@ -20,7 +20,10 @@ import java.util.HashSet;
 
 // idea:
 // Dynamic programming
-// record every letter it's longest length, then it's next letter can start from that offset
+
+// record every letter it's longest length, then it's next letter can start from that offset when that
+// letter repeats itself
+
 /**
  *        L3_LongestSubStringWithoutRepetition_M program = new L3_LongestSubStringWithoutRepetition_M();
  //System.out.println( program.lengthOfLongestSubstring("abcabcbb") );

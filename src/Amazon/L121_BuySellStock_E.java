@@ -2,46 +2,33 @@ package Amazon;
 
 public class L121_BuySellStock_E {
 
-    // beats 9.82%
     public int maxProfit(int[] prices) {
-        // maxProIndex: profit @ that index
-        // maxProfit:
-        int maxProIndex = 0, maxProfit = 0;
 
-        for( int i = 1; i < prices.length; i++){
-            int difference = prices[i] - prices[i-1];
-            if (maxProIndex + difference > 0 ) {
-                maxProIndex = maxProIndex + difference;
-            } else {
-                // decreasing
-                maxProIndex = 0;
+        if (prices == null || prices.length < 1) {
+            return 0;
+        }
+
+        int min = prices[0];
+        int profit = 0;
+
+        // 第i天的价格可以看作是买入价也可以看作是卖出价
+        for (int i = 1; i < prices.length; i++) {
+            // 找到更低的买入价
+            if (min > prices[i]) {
+                // 更新买入价
+                min = prices[i];
             }
-
-            // record the highest one
-            if (maxProIndex > maxProfit) {
-                maxProfit = maxProIndex;
+            // 当天的价格不低于买入价
+            else {
+                // 如果当天买出的价格比之前卖出的价格高
+                if (profit < prices[i] - min) {
+                    // 更新卖出价
+                    profit = prices[i] - min;
+                }
             }
         }
-        return maxProfit;
 
-//
-//        int today=0,max=0;
-//        for(int i=1;i<prices.length;i++){
-//            if(today+prices[i]-prices[i-1]>0)
-//                today=today+prices[i]-prices[i-1];
-//            else today=0;
-//            if(today>max)
-//                max=today;
-//        }
-//        return max;
-
-//        int minPrice = Integer.MAX_VALUE;
-//        int maxProfit = 0;
-//        for (int i = 0; i < prices.length; i ++) {
-//            minPrice = Integer.min(minPrice, prices[i]);
-//            maxProfit = Integer.max(maxProfit, prices[i] - minPrice);
-//        }
-//        return maxProfit;
+        return profit;
     }
 
 }

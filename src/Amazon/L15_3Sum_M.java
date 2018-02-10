@@ -41,6 +41,7 @@ public class L15_3Sum_M {
                 if(sum <= 0) while(nums[j] == nums[++j] && j < k);
                 if(sum >= 0) while(nums[k--] == nums[k] && j < k);
             }
+            // removing duplicates of i ==> unique only!
             while(nums[i] == nums[++i] && i < nums.length - 2);
         }
         return result;
