@@ -37,14 +37,21 @@ S,U,V etc. - 2nd, 3rd, 4th types
 * */
 
 class mycomparator implements Comparator<Player> {
-
     public int compare(Player p1, Player p2){
         if (p1.score == p2.score){
             return p1.name.compareTo(p2.name);
         }
         return p2.score - p1.score;
     }
+}
 
+class mycomparatorv2 implements Comparator<Player> {
+    public int compare(Player p1, Player p2){
+        if (p1.score == p2.score){
+            return p1.name.compareTo(p2.name);
+        }
+        return p1.score - p2.score;
+    }
 }
 
 class Player implements Comparable <Player>{
@@ -59,6 +66,7 @@ class Player implements Comparable <Player>{
         // ascending order
         return this.score > other.score? 1: -1;
     }
+
 }
 
 public class comparatorexample {
@@ -77,18 +85,10 @@ public class comparatorexample {
         for(int i = 0; i < player.length; i++){
             System.out.printf("%s %s\n", player[i].name, player[i].score);
         }
-        System.out.println("After sorting\t\n\n");
+        System.out.println("*******************\n\nAfter sorting\t");
         // Arrays.sort(player);
-
-        PriorityQueue<Player> queue = new PriorityQueue<>(new mycomparator());
-//        PriorityQueue<Player> queue2 = new PriorityQueue<>(new Comparator<Player>() {
-//            @Override
-//            public int compare(Player o1, Player o2) {
-//                return 0;
-//            }
-//        });
-
         mycomparator com = new mycomparator();
+        // This is how you sort array of types
         Arrays.sort(player, com);
 
         for(int i = 0; i < player.length; i++){
@@ -96,8 +96,18 @@ public class comparatorexample {
         }
 
 
-        System.out.println("Now reverse the custom comparator");
+        System.out.println("********************\n\nNow reverse the custom comparator");
         Arrays.sort(player, com.reversed());
+
+        for(int i = 0; i < player.length; i++){
+            System.out.printf("%s %s\n", player[i].name, player[i].score);
+        }
+
+
+
+        System.out.println("********************\n\n p1.score - p2.score\n");
+        System.out.println("by default minComes on Top: minQueue or priorityQueue");
+        Arrays.sort(player, new mycomparatorv2());
 
         for(int i = 0; i < player.length; i++){
             System.out.printf("%s %s\n", player[i].name, player[i].score);
