@@ -3,7 +3,18 @@ import Leetcode.*;
 public class FacebookMain {
     // Java: initial entry point declaration format!!!
     public static void main(String[] args) {
-        L139_WordBreak_M p = new L139_WordBreak_M();
+        L38_CountAndSay_E v = new L38_CountAndSay_E();
+//        L609_FindDuplicateFiles_M v = new L609_FindDuplicateFiles_M();
+
+
+//        L301_RemoveInvalidParentheses_H v = new L301_RemoveInvalidParentheses_H();
+
+//        L10_RegularExpression_H v = new L10_RegularExpression_H();
+
+//        L76_MinWindowSubString_H v = new L76_MinWindowSubString_H();
+//        L273_IntegerToEnglish_H v = new L273_IntegerToEnglish_H();
+
+        //L139_WordBreak_M p = new L139_WordBreak_M();
 //        L206_WordLadder_M p = new L206_WordLadder_M();
 //        p.test();
 //        L20_ValidParentheses_E p =new L20_ValidParentheses_E();
