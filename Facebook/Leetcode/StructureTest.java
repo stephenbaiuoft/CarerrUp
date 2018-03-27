@@ -12,6 +12,7 @@ public class StructureTest {
             ssEntry.getValue();
         }
 
+
         Iterator<Map.Entry<String, String>> mi = map.entrySet().iterator();
         while(mi.hasNext()){
             Map.Entry<String,String> tmp = mi.next();

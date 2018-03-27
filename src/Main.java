@@ -11,6 +11,7 @@ import com.company.javaClass.*;
 
 public class Main {
     public static void main(String[] args) {
+
 //        comparatorexample test = new comparatorexample();
 //        test.run("5\n" +
 //                "David 100\n" +
