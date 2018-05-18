@@ -1,13 +1,24 @@
 import April.L57_InsertInterval_H;
 import April.L680_ValidPalindrome_E;
 import April.L689_Max3Sub_H;
+import April.L721_AccountMerge_M;
 import March.*;
+import May.L229_MajorityElement_M;
+import May.L286_WallsGates_M;
+import May.L433_MinGeneticMut_M;
+import May.L785_BiPartite_M;
 
 import java.util.*;
 
 public class CurrentMain {
     public static void main(String[] args) {
-        L57_InsertInterval_H p = new L57_InsertInterval_H();
+        L433_MinGeneticMut_M p = new L433_MinGeneticMut_M();
+//        L229_MajorityElement_M p = new L229_MajorityElement_M();
+
+//        L785_BiPartite_M p = new L785_BiPartite_M();
+//        L721_AccountMerge_M p = new L721_AccountMerge_M();
+
+//        L57_InsertInterval_H p = new L57_InsertInterval_H();
 
 //        L680_ValidPalindrome_E p = new L680_ValidPalindrome_E();
 

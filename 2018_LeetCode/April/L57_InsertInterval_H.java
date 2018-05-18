@@ -44,7 +44,6 @@ public class L57_InsertInterval_H {
         list.add(new Interval(iStart, iEnd));
 
         while(i < intervals.size()) {
-            list.add(intervals.get(i++));
         }
         return list;
 
