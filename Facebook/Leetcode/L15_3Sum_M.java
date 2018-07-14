@@ -29,10 +29,10 @@ public class L15_3Sum_M {
                     sol.add(nums[right]);
                     rez.add(sol);
                     // get rid of duplicate solutions
-                    while(left+1 < nums.length && nums[left] == nums[left+1]) {
+                    while(left+1 < right && nums[left] == nums[left+1]) {
                         left +=1;
                     }
-                    while(right-1 >-1 && nums[right] == nums[right-1]) {
+                    while(right-1 > left && nums[right] == nums[right-1]) {
                         right -=1;
                     }
                     // increment left and right
