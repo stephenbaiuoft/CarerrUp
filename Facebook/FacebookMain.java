@@ -34,8 +34,8 @@ public class FacebookMain {
 //        L49_GroupAnagram_M p = new L49_GroupAnagram_M();
 //        p.test();
 
-//        L43_MultiplyString_M p = new L43_MultiplyString_M();
-//        p.multiply("763", "4");
+        L43_MultiplyString_M p = new L43_MultiplyString_M();
+        p.multiply("763", "4");
 
 
 //        L33_SearchRotated_M p = new L33_SearchRotated_M();

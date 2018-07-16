@@ -1,12 +1,43 @@
-import April.L680_ValidPalindrome_E;
-import April.L689_Max3Sub_H;
-import March.*;
+import June.*;
+import May.*;
+import rubrikMayJune.BoxStacking_M;
+import rubrikMayJune.StringTest;
 
 import java.util.*;
 
 public class CurrentMain {
     public static void main(String[] args) {
-        L680_ValidPalindrome_E p = new L680_ValidPalindrome_E();
+        TestSpace p = new TestSpace();
+
+//        GoogleSample p  = new GoogleSample();
+//        L683_KEmptySlots_H p = new L683_KEmptySlots_H();
+//        L681_NextClosestTime_M p = new L681_NextClosestTime_M();
+
+
+//        L647_PalindromeSubstring_M p = new L647_PalindromeSubstring_M();
+
+//        BoxStacking_M p = new BoxStacking_M();
+//        L500_FindWords_E p = new L500_FindWords_E();
+
+//        L227_CalculatorIII_M p = new L227_CalculatorIII_M();
+
+//        L300_LongestSubsequence_M p = new L300_LongestSubsequence_M();
+
+//        L53_MaxSubArray_M p = new L53_MaxSubArray_M();
+
+//        L448_FindDuplicatesArray_E p = new L448_FindDuplicatesArray_E();
+
+//        L164_MaxGap_H p = new L164_MaxGap_H();
+
+//        L433_MinGeneticMut_M p = new L433_MinGeneticMut_M();
+//        L229_MajorityElement_M p = new L229_MajorityElement_M();
+
+//        L785_BiPartite_M p = new L785_BiPartite_M();
+//        L721_AccountMerge_M p = new L721_AccountMerge_M();
+
+//        L57_InsertInterval_H p = new L57_InsertInterval_H();
+
+//        L680_ValidPalindrome_E p = new L680_ValidPalindrome_E();
 
 //        L689_Max3Sub_H p = new L689_Max3Sub_H();
 //        L179_LargestNumber_M p = new L179_LargestNumber_M();
@@ -29,6 +60,12 @@ public class CurrentMain {
 //        L2_AddTwoNums_M p = new L2_AddTwoNums_M();
 //        L149_MaxPointsLine_H p = new L149_MaxPointsLine_H();
 
+    }
+
+    class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) { val = x; }
     }
 
 

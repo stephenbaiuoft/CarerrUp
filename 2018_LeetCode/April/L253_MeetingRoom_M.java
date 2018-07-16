@@ -30,7 +30,6 @@ public class L253_MeetingRoom_M {
 
         // priorityqueue storing the end time only
         PriorityQueue<Integer> queue = new PriorityQueue<>();
-
         for(Interval i: intervals) {
             if (queue.isEmpty()) {
                 queue.add(i.end);

@@ -17,7 +17,10 @@ public class L43_MultiplyString_M {
         }
 
         StringBuilder sb = new StringBuilder();
-        for(int p : pos) if(!(sb.length() == 0 && p == 0)) sb.append(p);
+        for(int p : pos) {
+            if(!(sb.length() == 0 && p == 0))
+                sb.append(p);
+        }
         return sb.length() == 0 ? "0" : sb.toString();
     }
 }
