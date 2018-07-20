@@ -1,3 +1,5 @@
+import July.L763_PartitionLabels_M;
+import July.L819_MostCommonWord_E;
 import June.*;
 import May.*;
 import rubrikMayJune.BoxStacking_M;
@@ -7,7 +9,10 @@ import java.util.*;
 
 public class CurrentMain {
     public static void main(String[] args) {
-        TestSpace p = new TestSpace();
+        L763_PartitionLabels_M p = new L763_PartitionLabels_M();
+
+//        L819_MostCommonWord_E p = new L819_MostCommonWord_E();
+//        TestSpace p = new TestSpace();
 
 //        GoogleSample p  = new GoogleSample();
 //        L683_KEmptySlots_H p = new L683_KEmptySlots_H();
