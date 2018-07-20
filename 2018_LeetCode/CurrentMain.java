@@ -1,5 +1,6 @@
-import July.L763_PartitionLabels_M;
-import July.L819_MostCommonWord_E;
+import Amazon.*;
+import July.*;
+
 import June.*;
 import May.*;
 import rubrikMayJune.BoxStacking_M;
@@ -9,9 +10,13 @@ import java.util.*;
 
 public class CurrentMain {
     public static void main(String[] args) {
+
         L763_PartitionLabels_M p = new L763_PartitionLabels_M();
 
 //        L819_MostCommonWord_E p = new L819_MostCommonWord_E();
+
+//        L438_FindAnagram_E p = new L438_FindAnagram_E();
+
 //        TestSpace p = new TestSpace();
 
 //        GoogleSample p  = new GoogleSample();
