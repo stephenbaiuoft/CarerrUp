@@ -3,7 +3,8 @@ import Leetcode.*;
 public class FacebookMain {
     // Java: initial entry point declaration format!!!
     public static void main(String[] args) {
-        L38_CountAndSay_E v = new L38_CountAndSay_E();
+        L143_M p = new L143_M();
+//        L38_CountAndSay_E v = new L38_CountAndSay_E();
 //        L609_FindDuplicateFiles_M v = new L609_FindDuplicateFiles_M();
 
 
@@ -33,9 +34,9 @@ public class FacebookMain {
 
 //        L49_GroupAnagram_M p = new L49_GroupAnagram_M();
 //        p.test();
-
-        L43_MultiplyString_M p = new L43_MultiplyString_M();
-        p.multiply("763", "4");
+//
+//        L43_MultiplyString_M p = new L43_MultiplyString_M();
+//        p.multiply("763", "4");
 
 
 //        L33_SearchRotated_M p = new L33_SearchRotated_M();
