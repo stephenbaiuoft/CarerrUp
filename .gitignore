@@ -1,7 +1,10 @@
-.idea
-.idea/
 _mac/
 codestyles/
-*.xml
 out/
 lib/
+.idea/
+LeetJava.iml
+out/
+*.xml
+codestyles/
+colors/

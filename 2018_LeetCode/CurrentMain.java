@@ -2,6 +2,11 @@ import Amazon.LeetCode146;
 import July.L239_SlidingWindowMax_H;
 import July.L438_FindAnagram_E;
 import July.L76_MinString_H;
+import Amazon.LeetCode146;
+import July.L438_FindAnagram_E;
+import Amazon.*;
+import July.*;
+
 import June.*;
 import Leetcode.L143_M;
 import May.*;
@@ -12,10 +17,13 @@ import java.util.*;
 
 public class CurrentMain {
     public static void main(String[] args) {
-        L143_M p = new L143_M();
-//        L239_SlidingWindowMax_H p = new L239_SlidingWindowMax_H();
-//        L76_MinString_H p = new L76_MinString_H();
+
+        L763_PartitionLabels_M p = new L763_PartitionLabels_M();
+
+//        L819_MostCommonWord_E p = new L819_MostCommonWord_E();
+
 //        L438_FindAnagram_E p = new L438_FindAnagram_E();
+
 //        TestSpace p = new TestSpace();
 
 //        GoogleSample p  = new GoogleSample();
