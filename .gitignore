@@ -1,0 +1,7 @@
+.idea
+.idea/
+_mac/
+codestyles/
+*.xml
+out/
+lib/
