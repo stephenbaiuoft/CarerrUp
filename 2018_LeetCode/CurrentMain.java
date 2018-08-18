@@ -1,23 +1,13 @@
-import Amazon.LeetCode146;
-import July.L239_SlidingWindowMax_H;
-import July.L438_FindAnagram_E;
-import July.L76_MinString_H;
-import Amazon.LeetCode146;
-import July.L438_FindAnagram_E;
 import Amazon.*;
 import July.*;
+import March.*;
+import May.L433_MinGeneticMut_M;
 
-import June.*;
-import Leetcode.L143_M;
-import May.*;
-import rubrikMayJune.BoxStacking_M;
-import rubrikMayJune.StringTest;
 
 import java.util.*;
 
 public class CurrentMain {
     public static void main(String[] args) {
-
         L763_PartitionLabels_M p = new L763_PartitionLabels_M();
 
 //        L819_MostCommonWord_E p = new L819_MostCommonWord_E();
@@ -47,6 +37,8 @@ public class CurrentMain {
 //        L164_MaxGap_H p = new L164_MaxGap_H();
 
 //        L433_MinGeneticMut_M p = new L433_MinGeneticMut_M();
+//        L433_MinGeneticMut_M p = new L433_MinGeneticMut_M();
+
 //        L229_MajorityElement_M p = new L229_MajorityElement_M();
 
 //        L785_BiPartite_M p = new L785_BiPartite_M();

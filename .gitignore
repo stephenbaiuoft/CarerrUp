@@ -4,7 +4,5 @@ out/
 lib/
 .idea/
 LeetJava.iml
-out/
 *.xml
-codestyles/
 colors/
