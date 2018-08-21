@@ -8,7 +8,11 @@ import java.util.*;
 
 public class CurrentMain {
     public static void main(String[] args) {
-        L763_PartitionLabels_M p = new L763_PartitionLabels_M();
+        L348_M p = new L348_M();
+
+        LinkedList<LinkedList<Integer>> l = new LinkedList<LinkedList<Integer>>();
+
+//        L763_PartitionLabels_M p = new L763_PartitionLabels_M();
 
 //        L819_MostCommonWord_E p = new L819_MostCommonWord_E();
 
