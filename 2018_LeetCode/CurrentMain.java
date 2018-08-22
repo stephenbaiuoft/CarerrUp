@@ -1,5 +1,6 @@
 import Amazon.*;
 import July.*;
+import Leetcode.L34_M;
 import March.*;
 import May.L433_MinGeneticMut_M;
 
@@ -8,9 +9,10 @@ import java.util.*;
 
 public class CurrentMain {
     public static void main(String[] args) {
-        L348_M p = new L348_M();
+        L34_M p = new L34_M();
+//        L348_M p = new L348_M();
 
-        LinkedList<LinkedList<Integer>> l = new LinkedList<LinkedList<Integer>>();
+//        LinkedList<LinkedList<Integer>> l = new LinkedList<LinkedList<Integer>>();
 
 //        L763_PartitionLabels_M p = new L763_PartitionLabels_M();
 
