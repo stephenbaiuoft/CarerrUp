@@ -48,7 +48,7 @@ public class TreeIterativeTraversal_M {
         }
     }
 
-    // visit(left), visit(right), node
+    // node, visit(left), visit(right)
     void preorder(TreeNode node) {
         Stack<TreeNode> s  = new Stack<>();
         TreeNode cur = null;
