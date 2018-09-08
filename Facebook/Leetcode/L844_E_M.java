@@ -84,4 +84,36 @@ public class L844_E_M {
     }
 
 
+    public boolean backspaceCompareO_N(String S, String T) {
+        if (S == null || T == null) {
+            return false;
+        }
+
+        String s1 = helper(S);
+        String s2 = helper(T);
+        System.out.println(s1);
+        System.out.println(s2);
+
+
+        return s1.equals(s2);
+
+    }
+
+    private String helper(String s) {
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '#' && sb.length() > 0) {
+                sb.deleteCharAt(sb.length()-1);
+            }
+            else if (s.charAt(i) != '#'){
+                sb.append(s.charAt(i));
+            }
+        }
+
+        return sb.toString();
+
+    }
+
+
+
 }
