@@ -15,7 +15,7 @@ public class KMPAlgorithm {
     // find the first index of s for pattern
     public int findStringIndex(String s, String pattern) {
         int[] failTable = buildTable(pattern);
-        // x: length so far as well as can be used to map to the pattern in string
+        // x: length so far as well as can be used to map to the pattern in testing.string
         int x = 0;
 
         for (int k = 0; k < s.length(); k++) {

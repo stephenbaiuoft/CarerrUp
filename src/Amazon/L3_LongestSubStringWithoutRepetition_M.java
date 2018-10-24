@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 /**
  *
- * Given a string, find the length of the longest substring without repeating characters.
+ * Given a testing.string, find the length of the longest substring without repeating characters.
 
  Examples:
 

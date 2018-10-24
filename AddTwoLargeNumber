@@ -34,22 +34,22 @@
 
     }
 
-    public static class  ListNode {
+    public static class  common.data.types.ListNode {
         int val;
-        ListNode next;
-        ListNode(int x) { val = x; }
+        common.data.types.ListNode next;
+        common.data.types.ListNode(int x) { val = x; }
     }
 
 
 
-    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode result = new ListNode(0);
+    public static common.data.types.ListNode addTwoNumbers(common.data.types.ListNode l1, common.data.types.ListNode l2) {
+        common.data.types.ListNode result = new common.data.types.ListNode(0);
         long n1 = 0;
         long  n2 = 0;
         int count = 0;
-        ListNode track = result;
-        ListNode c1 = l1;
-        ListNode c2 = l2;
+        common.data.types.ListNode track = result;
+        common.data.types.ListNode c1 = l1;
+        common.data.types.ListNode c2 = l2;
 
         while( c1 != null && c2!= null){
             int factor = (int)Math.pow(10,count);
@@ -74,7 +74,7 @@
         long sum = n1 + n2;
         boolean fill_zero = false;
         if (sum == 0){
-            result.next = new ListNode(0);
+            result.next = new common.data.types.ListNode(0);
             return result.next;
         }
         else {
@@ -86,21 +86,21 @@
             upper = (int) (sum / Math.pow(10, 10));
 
             while (upper >= 1) {
-                track.next = new ListNode((int) upper % 10);
+                track.next = new common.data.types.ListNode((int) upper % 10);
                 upper = upper / 10;
                 track = track.next;
             }
 
             if(!fill_zero){
             while(lower>=1){
-                track.next = new ListNode((int) lower % 10);
+                track.next = new common.data.types.ListNode((int) lower % 10);
                 lower = lower / 10;
                 track = track.next;
             }}
             else{
                 int decrease = 10;
                 while( decrease > 0){
-                    track.next = new ListNode(0);
+                    track.next = new common.data.types.ListNode(0);
                     track = track.next;
                 }
             }

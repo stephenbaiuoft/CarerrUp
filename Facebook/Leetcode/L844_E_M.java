@@ -54,7 +54,7 @@ public class L844_E_M {
                 backOffset += T.charAt(j) == '#'? 1: -1;
             }
 
-            // base condition --> both reached the end of the string
+            // base condition --> both reached the end of the testing.string
             if (i == -1 && j == -1) return true;
                 // now we can compare j and j character
             else if ( i < 0 || j < 0 || S.charAt(i) != T.charAt(j)) {
@@ -71,7 +71,7 @@ public class L844_E_M {
 //            for (int backOffset = 0; j >= 0 && (backOffset > 0 || T.charAt(j) == '#'); j--)
 //                backOffset += T.charAt(j) == '#' ? 1 : -1;
 //
-//            // base condition --> both reached the end of the string
+//            // base condition --> both reached the end of the testing.string
 //            if (i == -1 && j == -1) return true;
 //
 //            else if (i < 0 || j < 0 ||S.charAt(i) != T.charAt(j)) {

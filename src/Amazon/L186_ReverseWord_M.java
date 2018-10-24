@@ -4,10 +4,10 @@ import java.util.regex.Pattern;
 
 /**
  Question:
- Given an input string, reverse the string word by word.
+ Given an input testing.string, reverse the testing.string word by word.
  A word is defined as a sequence of non-space characters.
 
- The input string does not contain leading or trailing spaces
+ The input testing.string does not contain leading or trailing spaces
  and the words are always separated by a single space.
 
  For example,
@@ -17,12 +17,12 @@ import java.util.regex.Pattern;
  Could you do it in-place without allocating extra space?
  */
 
-// idea: reverse string and reverse each word!
+// idea: reverse testing.string and reverse each word!
 public class L186_ReverseWord_M {
     public String reverseWords(String s) {
         s = s.trim();
         s = s.replaceAll(" +", " ");
-        // reverse the string first
+        // reverse the testing.string first
         char[] revChars = reverse(s.toCharArray(), 0, s.length()- 1);
 
         int wordStart = 0;

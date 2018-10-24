@@ -1,7 +1,7 @@
 package Amazon;
 
 /**
- * Implement atoi to convert a string to an integer.
+ * Implement atoi to convert a testing.string to an integer.
 
  Hint: Carefully consider all possible input cases. If you want a challenge,
  please do not see below and ask yourself what are the possible input cases.
@@ -23,7 +23,7 @@ package Amazon;
 public class L8_StringToInteger_M {
     public int myAtoi(String str) {
         int index = 0, sign = 1, total = 0;
-        //1. Empty string
+        //1. Empty testing.string
         if(str.length() == 0) return 0;
 
         //2. Remove Spaces

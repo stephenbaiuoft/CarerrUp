@@ -15,19 +15,19 @@ public class L297_SerializeDeserialize_H {
     }
 
     public void test(){
-//        TreeNode testHead  = new TreeNode(0);
-//        testHead.left = new TreeNode(1);
-//        testHead.right = new TreeNode(3);
+//        common.data.types.TreeNode testHead  = new common.data.types.TreeNode(0);
+//        testHead.left = new common.data.types.TreeNode(1);
+//        testHead.right = new common.data.types.TreeNode(3);
 //
-//        testHead.left.left = new TreeNode(2);
-//        testHead.right.left = new TreeNode(4);
+//        testHead.left.left = new common.data.types.TreeNode(2);
+//        testHead.right.left = new common.data.types.TreeNode(4);
 //
-//        testHead.right.left.right = new TreeNode(5);
+//        testHead.right.left.right = new common.data.types.TreeNode(5);
 
         TreeNode t = new TreeNode(1);
 
         String serializedOutput = serialize(t);
-        System.out.println("serialized string: " + serializedOutput);
+        System.out.println("serialized testing.string: " + serializedOutput);
 
 
 

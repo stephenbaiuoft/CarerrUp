@@ -1,7 +1,7 @@
 package Amazon;
 
 /**
- * Given a string, sort it in decreasing order based on the frequency of characters.
+ * Given a testing.string, sort it in decreasing order based on the frequency of characters.
 
  Example 1:
 

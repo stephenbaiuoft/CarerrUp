@@ -72,7 +72,7 @@ public class LongestPalindrome {
 
 
 
-    // return the longest palindrome string
+    // return the longest palindrome testing.string
     public String dynamicParse(String s ){
         if (s.length() ==1) return s;
 

@@ -3,7 +3,7 @@ package Leetcode;
 /*
 *
 *
-* Write a function to check whether an input string is a valid IPv4 address or IPv6 address or neither.
+* Write a function to check whether an input testing.string is a valid IPv4 address or IPv6 address or neither.
 
 IPv4 addresses are canonically represented in dot-decimal notation, which consists of four decimal numbers, each ranging from 0 to 255, separated by dots ("."), e.g.,172.16.254.1;
 
@@ -15,7 +15,7 @@ However, we don't replace a consecutive group of zero value with a single empty 
 
 Besides, extra leading zeros in the IPv6 is also invalid. For example, the address 02001:0db8:85a3:0000:0000:8a2e:0370:7334 is invalid.
 
-Note: You may assume there is no extra space or special characters in the input string.
+Note: You may assume there is no extra space or special characters in the input testing.string.
 
 Example 1:
 Input: "172.16.254.1"

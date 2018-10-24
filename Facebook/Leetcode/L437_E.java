@@ -83,14 +83,14 @@ public class L437_E {
 //private LinkedList<LinkedList<Integer>> result = new LinkedList<>();
 //    private int gSum = 0;
 
-//    public int pathSum(TreeNode root, int sum) {
+//    public int pathSum(common.data.types.TreeNode root, int sum) {
 //        gSum = sum;
 //        int count = traverse(root, sum, new LinkedList<>());
 //        return count;
 //    }
 
     // return # of paths that add up to sum from this node
-//    private int traverse(TreeNode node, int remain, LinkedList<Integer> trace) {
+//    private int traverse(common.data.types.TreeNode node, int remain, LinkedList<Integer> trace) {
 //        // base case
 //        if (node == null) return 0;
 //

@@ -2,7 +2,7 @@ package Microsoft;
 
 /**
  *
- * Implement atoi to convert a string to an integer.
+ * Implement atoi to convert a testing.string to an integer.
  * Think about all corner cases
  * 1. invalid characters
  * 2. white spaces

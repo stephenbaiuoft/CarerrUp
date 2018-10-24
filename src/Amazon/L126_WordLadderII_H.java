@@ -66,7 +66,7 @@ public class L126_WordLadderII_H {
     public List<List<String>> findLadders(String beginWord, String endWord, List<String> wordList) {
         // create distance for each node
         HashMap<String, Integer> distance = new HashMap<>();
-        // keep each string's nearby neighbours
+        // keep each testing.string's nearby neighbours
         HashMap<String, List<String>> neighbourMap = new HashMap<>();
         HashSet<String> dict = new HashSet<>(wordList);
 

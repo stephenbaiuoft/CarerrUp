@@ -1,7 +1,7 @@
 package Leetcode;
 
 public class StringMethods {
-    // string builder
+    // testing.string builder
     public void test_v2() {
         StringBuilder sb = new StringBuilder();
         // int i,
@@ -23,7 +23,7 @@ public class StringMethods {
 
         int index = 0 ;
         s.charAt(index);
-        s.contains("test string");
+        s.contains("test testing.string");
 
 
         int beginIndex = 0;
@@ -31,7 +31,7 @@ public class StringMethods {
         s.substring(beginIndex, endIndex);
         s.substring(beginIndex);
 
-        s.equals("another string in terms of content");
+        s.equals("another testing.string in terms of content");
 
         // change String Cases
         s.toLowerCase();

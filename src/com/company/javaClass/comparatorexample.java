@@ -19,7 +19,7 @@ V - Value
 S,U,V etc. - 2nd, 3rd, 4th types
 * */
 /*
-* 1. compare base on string, if tie then int
+* 1. compare base on testing.string, if tie then int
 *
 * */
 /*

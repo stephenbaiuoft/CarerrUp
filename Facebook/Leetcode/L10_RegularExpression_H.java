@@ -6,7 +6,7 @@ package Leetcode;
  '.' Matches any single character.
  '*' Matches zero or more of the preceding element.
 
- The matching should cover the entire input string (not partial).
+ The matching should cover the entire input testing.string (not partial).
 
  The function prototype should be:
  bool isMatch(const char *s, const char *p)
@@ -22,7 +22,7 @@ package Leetcode;
 
  *
  */
-// --> DP problem: note the index offset when traversing through the string
+// --> DP problem: note the index offset when traversing through the testing.string
 //     literal as
 public class L10_RegularExpression_H {
     public L10_RegularExpression_H() {

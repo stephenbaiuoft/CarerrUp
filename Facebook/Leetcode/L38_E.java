@@ -28,7 +28,7 @@ public class L38_E {
 //            // update i'th index
 //            i = j;
 //        }
-//        // store the string
+//        // store the testing.string
 //        result[ind] = res;
 //
 //    }

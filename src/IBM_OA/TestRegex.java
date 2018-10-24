@@ -13,7 +13,7 @@ import java.util.*;
 * */
 
 public class TestRegex{
-    // output the string
+    // output the testing.string
     public void solution(String passage) {
 
         // assuming passage is given correctly

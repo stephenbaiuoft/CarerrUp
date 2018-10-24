@@ -14,7 +14,7 @@ public class stringClass {
     public void string(){
         String s1 = "Hello";
         String s2 = s1;
-        // note this only returns... so yes!! you cannot modify string
+        // note this only returns... so yes!! you cannot modify testing.string
         s1.charAt(1) ;
         //s1.rever
     }

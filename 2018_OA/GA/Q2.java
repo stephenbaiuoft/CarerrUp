@@ -5,7 +5,7 @@ import java.util.List;
 public class Q2 {
     // Complete the MinSliceWeight function below.
     // Complete the MinSliceWeight function below.
-    static int MinSliceWeight(List<List<Integer>> Matrix) {
+    public static int minSliceWeight(List<List<Integer>> Matrix) {
         //dp solution
         //assuming the input is N X N
         // base case

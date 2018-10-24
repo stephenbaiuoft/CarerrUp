@@ -41,7 +41,7 @@ Note:
 
 You may assume all letters are in lowercase.
 You may assume that if a is a prefix of b, then a must appear before b in the given dictionary.
-If the order is invalid, return an empty string.
+If the order is invalid, return an empty testing.string.
 There may be multiple valid order of letters, return any one of them is fine.
 * */
 
@@ -62,7 +62,7 @@ There may be multiple valid order of letters, return any one of them is fine.
 *    注意
 *    1。 用hashmap来存indegree
 *
-* - string 1 对比string 2 找到第一个不同
+* - testing.string 1 对比string 2 找到第一个不同
 *
 * */
 

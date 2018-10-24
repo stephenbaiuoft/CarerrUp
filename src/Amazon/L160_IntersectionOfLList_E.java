@@ -29,7 +29,7 @@ public class L160_IntersectionOfLList_E {
 
       // Idea:
     // 2 iterations:
-    // first iteration: by the end -> switch to the head of the other ListNode
+    // first iteration: by the end -> switch to the head of the other common.data.types.ListNode
     // in the 2nd iteration: Note by the condition while (a!=b)
     // this will make sure that if no itersection, a will be null and b will be null at the same time
     // If Itersection, then a and b will meet at the same time!!!
@@ -46,10 +46,10 @@ public class L160_IntersectionOfLList_E {
 
       }
 
-//    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-//        ListNode a = headA;
-//        ListNode b = headB;
-//        HashSet <ListNode> hashSet = new HashSet<>();
+//    public common.data.types.ListNode getIntersectionNode(common.data.types.ListNode headA, common.data.types.ListNode headB) {
+//        common.data.types.ListNode a = headA;
+//        common.data.types.ListNode b = headB;
+//        HashSet <common.data.types.ListNode> hashSet = new HashSet<>();
 //
 //        while(a != null){
 //            hashSet.add(a);

@@ -20,7 +20,7 @@ public class TrieTree {
 
     }
 
-    // insert string and store to this node
+    // insert testing.string and store to this node
     public void insert(String input, TrieNode node) {
         HashMap childMap = node.childMap;
         for(int i = 0; i < input.length(); i++) {

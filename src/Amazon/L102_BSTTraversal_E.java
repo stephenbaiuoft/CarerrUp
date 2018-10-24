@@ -62,9 +62,9 @@ public class L102_BSTTraversal_E {
     }
 
     // Own Implementation!!
-//    public List<List<Integer>> levelOrder(TreeNode root) {
+//    public List<List<Integer>> levelOrder(common.data.types.TreeNode root) {
 //        List<List<Integer>> set = new ArrayList<>();
-//        Queue<TreeNode> curQueue = new ArrayDeque<>();
+//        Queue<common.data.types.TreeNode> curQueue = new ArrayDeque<>();
 //
 //        if (root != null ){
 //            curQueue.add(root);
@@ -73,7 +73,7 @@ public class L102_BSTTraversal_E {
 //                List<Integer> levelSet = new ArrayList<>();
 //                Queue nextQueue = new ArrayDeque();
 //                while(!curQueue.isEmpty()){
-//                    TreeNode curNode = curQueue.poll();
+//                    common.data.types.TreeNode curNode = curQueue.poll();
 //
 //                    levelSet.add(curNode.val);
 //                    // assigning next ones

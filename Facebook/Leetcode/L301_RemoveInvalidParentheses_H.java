@@ -40,7 +40,7 @@ public class L301_RemoveInvalidParentheses_H {
             rez.add(s);
             return;
         }
-        // loop through rest of the string
+        // loop through rest of the testing.string
         for (int i = start; i < s.length(); i++) {
             // skip duplicates
             if (i != start && s.charAt(i) == s.charAt(i-1)) continue;
@@ -57,7 +57,7 @@ public class L301_RemoveInvalidParentheses_H {
         }
     }
 
-    // check if given string is valid
+    // check if given testing.string is valid
     private boolean checkValid(String s) {
         int count = 0;
         for(char c: s.toCharArray()) {

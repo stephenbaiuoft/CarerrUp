@@ -15,7 +15,7 @@ public class L449_SerializeDeserialize_M {
     private String nullCharacter = "x";
     private String separator = ",";
 
-    // Encodes a tree to a single string.
+    // Encodes a tree to a single testing.string.
     public String serialize(TreeNode root) {
 
         StringBuilder buffer = new StringBuilder();

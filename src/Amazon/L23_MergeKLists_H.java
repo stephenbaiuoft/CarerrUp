@@ -52,12 +52,12 @@ public class L23_MergeKLists_H {
 }
 /**
  *
- public ListNode mergeKLists(ListNode[] lists ) {
+ public common.data.types.ListNode mergeKLists(common.data.types.ListNode[] lists ) {
  if (lists==null||lists.length==0) return null;
 
- PriorityQueue<ListNode> queue= new PriorityQueue<ListNode>(lists.length,new Comparator<ListNode>(){
+ PriorityQueue<common.data.types.ListNode> queue= new PriorityQueue<common.data.types.ListNode>(lists.length,new Comparator<common.data.types.ListNode>(){
 @Override
-public int compare(ListNode o1,ListNode o2){
+public int compare(common.data.types.ListNode o1,common.data.types.ListNode o2){
 if (o1.val<o2.val)
 return -1;
 else if (o1.val==o2.val)
@@ -67,10 +67,10 @@ return 1;
 }
 });
 
- ListNode dummy = new ListNode(0);
- ListNode tail=dummy;
+ common.data.types.ListNode dummy = new common.data.types.ListNode(0);
+ common.data.types.ListNode tail=dummy;
 
- for (ListNode node:lists)
+ for (common.data.types.ListNode node:lists)
  if (node!=null)
  queue.add(node);
 

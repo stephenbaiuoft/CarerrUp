@@ -65,7 +65,7 @@ public class FacebookMain {
 
 
 //        L337_HouseRobber_M p = new L337_HouseRobber_M();
-//        TreeNode root = new TreeNode(4);
+//        common.data.types.TreeNode root = new common.data.types.TreeNode(4);
 //
 //        p.rob(root);
 
@@ -79,7 +79,7 @@ public class FacebookMain {
 //        p.test();
 
 //        L257_BinaryTreePath_E p = new L257_BinaryTreePath_E();
-//        TreeNode t1 = new TreeNode(5);
+//        common.data.types.TreeNode t1 = new common.data.types.TreeNode(5);
 //        p.binaryTreePaths(t1);
 
 //        L91_DecodeWays_M p = new L91_DecodeWays_M();

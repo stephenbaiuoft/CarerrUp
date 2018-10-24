@@ -107,7 +107,7 @@ public class MSTKruskal {
     }
 
 
-    // return the parent string of the input
+    // return the parent testing.string of the input
     public String findParent( String node1, HashMap parent ){
         if( parent.get(node1) == node1 ){
             return node1;
