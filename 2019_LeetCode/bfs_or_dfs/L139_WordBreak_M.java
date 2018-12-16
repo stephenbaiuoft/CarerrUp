@@ -1,4 +1,4 @@
-package bfs.or.dfs;
+package bfs_or_dfs;
 
 /*
 * Given a non-empty testing.string s and a dictionary wordDict containing a list of non-empty words,

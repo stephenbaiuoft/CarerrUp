@@ -10,6 +10,7 @@ public class L402_RemoveKDigits_M {
         String rez = removeKdigits(num, 3);
 
     }
+
     public String removeKdigits(String num, int k) {
         //change to list
         List<Character> list = new ArrayList<Character>();
@@ -30,6 +31,7 @@ public class L402_RemoveKDigits_M {
             // size == list.size() makes sure first case and 2nd case CANNOT Happen at the same time
             //if no observation 1, use observation 2
             if(size == list.size()){
+                // the for-loop ensures that always the largest element is popped every time
                 for(int j = 0; j < size; j++){
                     if((j < size - 1 && list.get(j) > list.get(j+1)) || (j == size - 1)){
                         list.remove(j);

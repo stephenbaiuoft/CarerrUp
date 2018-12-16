@@ -1,4 +1,4 @@
-package rubrikMayJune;
+package OARelated.rubrikMayJune;
 
 import java.util.HashMap;
 import java.util.LinkedList;

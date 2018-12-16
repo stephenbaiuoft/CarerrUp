@@ -1,4 +1,4 @@
-package rubrikMayJune;
+package OARelated.rubrikMayJune;
 
 public class L53_MaxSubArray_M {
     public L53_MaxSubArray_M() {

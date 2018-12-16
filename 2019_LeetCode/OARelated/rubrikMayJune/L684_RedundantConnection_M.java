@@ -1,4 +1,4 @@
-package rubrikMayJune;
+package OARelated.rubrikMayJune;
 
 public class L684_RedundantConnection_M {
     public int[] findRedundantConnection(int[][] edges) {

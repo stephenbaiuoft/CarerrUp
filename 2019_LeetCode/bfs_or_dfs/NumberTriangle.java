@@ -1,4 +1,4 @@
-package bfs.or.dfs;
+package bfs_or_dfs;
 
 import common.helpermethods.Helper;
 

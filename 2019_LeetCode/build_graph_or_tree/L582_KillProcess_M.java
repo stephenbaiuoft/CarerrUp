@@ -1,4 +1,4 @@
-package build.graph.or.tree;
+package build_graph_or_tree;
 
 import common.helpermethods.Helper;
 

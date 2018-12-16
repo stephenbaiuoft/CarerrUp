@@ -1,18 +1,18 @@
-import OARelated.CutTheSticks;
-import bfs.or.dfs.ColorfulNumber;
-import bfs.or.dfs.NumberTriangle;
-import bfs.or.dfs.SteppingNumber;
+import OARelated.BlinkHealth;
 import common.data.types.TreeNode;
-import dynamic_programming.LongestIncreasingSequence;
-import stack_zgl.L402_RemoveKDigits_M;
+import string_processing.L165_CompareVersionNumber_M;
 
 
-import java.awt.*;
 import java.util.*;
 
 public class CurrentMain {
+
     public static void main(String[] args) {
-        L402_RemoveKDigits_M p = new L402_RemoveKDigits_M();
+
+
+
+        // L165_CompareVersionNumber_M p = new L165_CompareVersionNumber_M();
+        // L402_RemoveKDigits_M p = new L402_RemoveKDigits_M();
 
         //CutTheSticks c = new CutTheSticks();
         //LongestIncreasingSequence l = new LongestIncreasingSequence();
@@ -23,12 +23,17 @@ public class CurrentMain {
 
     }
 
-    class ListNode {
+    public class ListNode {
         int val;
         ListNode next;
         ListNode(int x) { val = x; }
     }
 
+//    CurrentMain p = new CurrentMain();
+//        p.foo();
+    private void foo() {
+        System.out.println("do nothing");
+    }
 
 
     private static void hashTest() {

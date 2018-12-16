@@ -1,4 +1,4 @@
-package bfs.or.dfs;
+package bfs_or_dfs;
 
 import java.util.HashSet;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package bfs.or.dfs;
+package bfs_or_dfs;
 
 /*
 * Given two words (beginWord and endWord), and a dictionary's word list,

@@ -1,4 +1,4 @@
-package hashmap.questions;
+package hashmap_questions;
 
 import java.util.HashMap;
 import java.util.List;
