@@ -1,5 +1,6 @@
 import OARelated.BlinkHealth;
 import common.data.types.TreeNode;
+import dynamic_programming.L849_MaxDistanceSitting_E;
 import string_processing.L165_CompareVersionNumber_M;
 
 
@@ -9,7 +10,7 @@ public class CurrentMain {
 
     public static void main(String[] args) {
 
-
+        L849_MaxDistanceSitting_E p = new L849_MaxDistanceSitting_E();
 
         // L165_CompareVersionNumber_M p = new L165_CompareVersionNumber_M();
         // L402_RemoveKDigits_M p = new L402_RemoveKDigits_M();
