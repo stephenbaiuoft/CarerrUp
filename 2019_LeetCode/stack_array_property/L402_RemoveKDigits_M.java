@@ -1,8 +1,7 @@
-package stack_zgl;
+package stack_array_property;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.PriorityQueue;
 
 public class L402_RemoveKDigits_M {
     public L402_RemoveKDigits_M() {

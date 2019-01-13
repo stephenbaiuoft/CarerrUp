@@ -1,5 +1,7 @@
 import OARelated.BlinkHealth;
+import algorithm.structure.FenwickTreeDemo;
 import common.data.types.TreeNode;
+import dynamic_programming.L139_WordBreak_M;
 import dynamic_programming.L849_MaxDistanceSitting_E;
 import string_processing.L165_CompareVersionNumber_M;
 
@@ -9,8 +11,11 @@ import java.util.*;
 public class CurrentMain {
 
     public static void main(String[] args) {
+        FenwickTreeDemo d = new FenwickTreeDemo();
+//        L139_WordBreak_M p = new L139_WordBreak_M();
 
-        L849_MaxDistanceSitting_E p = new L849_MaxDistanceSitting_E();
+
+        // L849_MaxDistanceSitting_E p = new L849_MaxDistanceSitting_E();
 
         // L165_CompareVersionNumber_M p = new L165_CompareVersionNumber_M();
         // L402_RemoveKDigits_M p = new L402_RemoveKDigits_M();

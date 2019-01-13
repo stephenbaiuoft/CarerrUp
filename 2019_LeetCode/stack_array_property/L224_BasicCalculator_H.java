@@ -1,4 +1,4 @@
-package stack_zgl;
+package stack_array_property;
 
 import java.util.Stack;
 

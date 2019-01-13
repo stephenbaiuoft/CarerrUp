@@ -1,6 +1,10 @@
 package sliding_windows;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.HashMap;
+import java.util.HashSet;
+
 /*
 题目
 In a row of trees, the i-th tree produces fruit with type tree[i].
@@ -85,4 +89,35 @@ public class L904_FruitIntoBaskets_M {
         return maxL;
     }
 
+    public int totalFruitSet(int[] tree) {
+        HashSet<Integer> set = new HashSet<>();
+        int start = -1;
+        int end = 0;
+        int maxL = 1;
+
+        for (int i = 0; i < tree.length; i++) {
+            if ( set.contains(tree[i])) {
+                maxL = Math.max(maxL, i - start);
+            } else { // not containing
+                set.add(tree[i]);
+                // add to q
+                if (set.size() == 3) {
+                    start = i - 1;
+                    // v is the adjacent value, regardless
+                    int v = tree[start];
+                    while (start > -1) {
+                        if (tree[start] != v) {
+                            set.remove(tree[start]); // remove this element
+                            // found the element
+                            break;
+                        }
+                        start --;
+                    }
+                }
+                // update maxL
+                maxL = Math.max(maxL, i - start);
+            }
+        }
+        return maxL;
+    }
 }

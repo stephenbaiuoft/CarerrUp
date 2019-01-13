@@ -38,6 +38,7 @@ public class quicksort {
         }
         System.out.println("");
     }
+
     public static void qsort(int[] ary, int p, int r){
         if ( p < r){
 
