@@ -1,5 +1,6 @@
 import OARelated.BlinkHealth;
 import algorithm.structure.FenwickTreeDemo;
+import algorithm.structure.L315_CountSmaller_H;
 import common.data.types.TreeNode;
 import dynamic_programming.L139_WordBreak_M;
 import dynamic_programming.L849_MaxDistanceSitting_E;
@@ -11,7 +12,8 @@ import java.util.*;
 public class CurrentMain {
 
     public static void main(String[] args) {
-        FenwickTreeDemo d = new FenwickTreeDemo();
+        L315_CountSmaller_H p = new L315_CountSmaller_H();
+//        FenwickTreeDemo d = new FenwickTreeDemo();
 //        L139_WordBreak_M p = new L139_WordBreak_M();
 
 
