@@ -51,6 +51,7 @@ public class L206_WordLadder_M {
                         String tmp =  String.valueOf(charAry);
                         if (set.contains(tmp)) {
                             //add to queue && remove from the set
+                            // removing from set is the memoization step
                             queue.add(tmp);
                             set.remove(tmp);
                         }

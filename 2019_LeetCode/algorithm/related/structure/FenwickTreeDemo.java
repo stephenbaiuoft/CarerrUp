@@ -1,4 +1,4 @@
-package algorithm.structure;
+package algorithm.related.structure;
 
 public class FenwickTreeDemo {
     public FenwickTreeDemo() {

@@ -1,4 +1,4 @@
-package algorithm.structure;
+package algorithm.related.structure;
 
 import java.util.Arrays;
 import java.util.HashMap;

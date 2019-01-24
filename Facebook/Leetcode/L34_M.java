@@ -35,6 +35,15 @@ public class L34_M {
         return rez;
     }
 
+    /*
+    * 解体思路：
+    *
+    * 因为 right = mid， 而你while-loop的terminate的逻辑是 left < right (as long as it is true)
+    * so in case of duplicates, even nums[mid] = right for the first mid (that is actually correct),
+    * -> 这个algorithm还是会继续 ==> 意味着把right 就继续挤压
+    *
+    *
+    * */
     // log(n)
     private int findLowerBound(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
@@ -51,9 +60,16 @@ public class L34_M {
         return left;
     }
 
+    /**
+     * 这就是另外一个很经典的解体思路 ===> 你看 这一次是把 left 继续挤压==》
+     *  这样类比 就把最右边的index算出来了
+     *
+     */
+
+
     private int findUpperBound(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
-        while(left < right && left != right -1) {
+        while(left < right && left != right -1) { // must ==> left != right -1 因为 mid = left + (right -left)/2 and 存在infinite loop的情况
             int mid = left + (right -left) / 2;
             if (nums[mid] <= target) {
                 left = mid;
@@ -63,6 +79,6 @@ public class L34_M {
                 right = mid - 1;
             }
         }
-        return nums[right] == target? right: left;
+        return nums[right] == target? right: left; //所以最后 查一查 到底是 right 等于target还是left 等于target 毕竟可以在 left = right -1的情况 terminate
     }
 }
