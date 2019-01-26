@@ -4,14 +4,14 @@ import java.util.Random;
 
 public class L528_RandomPickWithWeight_M {
     public L528_RandomPickWithWeight_M() {
-//        int[] w = new int[] {
-//                3, 14, 1, 7
-//        };
-//
-//        init(w);
-//        for (int i = 0; i < 10; i++) {
-//            System.out.println(pickIndex());
-//        }
+        int[] w = new int[] {
+                3, 14, 1, 7
+        };
+
+        init(w);
+        for (int i = 0; i < 10; i++) {
+            System.out.println(pickIndex());
+        }
     }
 
     public void init(int[] w) {
