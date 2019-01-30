@@ -1,6 +1,9 @@
 import algorithm.related.design.L528_RandomPickWithWeight_M;
 import algorithm.related.structure.L315_CountSmaller_H;
+import bfs_or_dfs.L947_MostStonesRemovedWithSameRowOrCol_M;
 import common.data.types.TreeNode;
+import heap_minqueue.L857_MinCostKWorkers_H;
+import twopointers.hashmap.string.L18_4Sum_M;
 
 
 import java.util.*;
@@ -8,7 +11,11 @@ import java.util.*;
 public class CurrentMain {
 
     public static void main(String[] args) {
-        L528_RandomPickWithWeight_M p = new L528_RandomPickWithWeight_M();
+        L857_MinCostKWorkers_H h = new L857_MinCostKWorkers_H();
+//        L947_MostStonesRemovedWithSameRowOrCol_M v = new L947_MostStonesRemovedWithSameRowOrCol_M();
+//        L18_4Sum_M s = new L18_4Sum_M();
+
+//        L528_RandomPickWithWeight_M p = new L528_RandomPickWithWeight_M();
 //        L315_CountSmaller_H p = new L315_CountSmaller_H();
 //        FenwickTreeDemo d = new FenwickTreeDemo();
 //        L139_WordBreak_M p = new L139_WordBreak_M();
