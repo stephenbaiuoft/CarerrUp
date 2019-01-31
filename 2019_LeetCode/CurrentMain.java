@@ -1,6 +1,7 @@
 import algorithm.related.design.L528_RandomPickWithWeight_M;
 import algorithm.related.structure.L315_CountSmaller_H;
 import bfs_or_dfs.L947_MostStonesRemovedWithSameRowOrCol_M;
+import binarysearch.binary_search_test;
 import common.data.types.TreeNode;
 import heap_minqueue.L857_MinCostKWorkers_H;
 import tree_traversal.L222_CountCompleteTreeNodes_M;
@@ -13,7 +14,8 @@ import java.util.*;
 public class CurrentMain {
 
     public static void main(String[] args) {
-        L833_FindAndReplaceInString_M f = new L833_FindAndReplaceInString_M();
+        binary_search_test t = new binary_search_test();
+//        L833_FindAndReplaceInString_M f = new L833_FindAndReplaceInString_M();
 //        L222_CountCompleteTreeNodes_M m = new L222_CountCompleteTreeNodes_M();
 //        L857_MinCostKWorkers_H h = new L857_MinCostKWorkers_H();
 //        L947_MostStonesRemovedWithSameRowOrCol_M v = new L947_MostStonesRemovedWithSameRowOrCol_M();
