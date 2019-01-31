@@ -69,7 +69,7 @@ Output: [1,2,3,4]
                 // arr[mid] is more than the arr[mid+k]
                 left = mid + 1;
             } else { // arr[mid] - x <= arr[mid+k] - x
-                // then, this range [mid, mid + k) is safe
+                // then, this range [mid, mid + k - 1] is safe comparing to  mid + k because of this comparison!!!!!!!
                 right = mid;
             }
         }
@@ -80,6 +80,7 @@ Output: [1,2,3,4]
         }
 
         return list;
+        
     }
 
     // return the value closet to target
