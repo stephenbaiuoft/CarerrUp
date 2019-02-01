@@ -3,7 +3,9 @@ import algorithm.related.structure.L315_CountSmaller_H;
 import bfs_or_dfs.L947_MostStonesRemovedWithSameRowOrCol_M;
 import binarysearch.binary_search_test;
 import common.data.types.TreeNode;
+import dynamic_programming.L135_Candy_H;
 import heap_minqueue.L857_MinCostKWorkers_H;
+import string_processing.L809_ExpressiveWords_M;
 import tree_traversal.L222_CountCompleteTreeNodes_M;
 import twopointers.hashmap.string.L18_4Sum_M;
 import twopointers.hashmap.string.L833_FindAndReplaceInString_M;
@@ -14,7 +16,9 @@ import java.util.*;
 public class CurrentMain {
 
     public static void main(String[] args) {
-        binary_search_test t = new binary_search_test();
+        L809_ExpressiveWords_M e = new L809_ExpressiveWords_M();
+//        L135_Candy_H c = new L135_Candy_H();
+//        binary_search_test t = new binary_search_test();
 //        L833_FindAndReplaceInString_M f = new L833_FindAndReplaceInString_M();
 //        L222_CountCompleteTreeNodes_M m = new L222_CountCompleteTreeNodes_M();
 //        L857_MinCostKWorkers_H h = new L857_MinCostKWorkers_H();
