@@ -3,7 +3,8 @@ package brain_teaser;
 /*
 In a string composed of 'L', 'R', and 'X' characters, like "RXXLRXRXL",
 a move consists of either replacing one occurrence of "XL" with "LX",
-or replacing one occurrence of "RX" with "XR". Given the starting string start and the ending string end, return True if and only if there exists a sequence of moves to transform one string to the other.
+or replacing one occurrence of "RX" with "XR". Given the starting string start and the ending string end,
+ return True if and only if there exists a sequence of moves to transform one string to the other.
 
 Example:
 
@@ -27,23 +28,38 @@ XRLXXRRLX
 * */
 public class L777_SwapAdjacentInLRString_M {
 
+
     public boolean canTransform(String start, String end) {
-        if (!start.replace("X", "").equals(end.replace("X", "")))
+        // L and R cannot change their relative positions based on the given two transformation
+        if (!start.replaceAll("X", "").
+                equals(end.replaceAll("X", "")))
             return false;
 
-        int t = 0;
-        for (int i = 0; i < start.length(); ++i)
+        int eIdx = 0;
+        for (int i = 0; i < start.length(); i++) {
+            // this also works because --> LR order has been checked already
+            // so this means the while-loop latter won't ever run out of the boundary
             if (start.charAt(i) == 'L') {
-                while (end.charAt(t) != 'L') t++;
-                if (i < t++) return false;
+                // find L
+                while (end.charAt(eIdx) != 'L') {
+                    eIdx++;
+                }
+                if (i < eIdx) {
+                    return false;
+                }
+                // update eIdx
+                eIdx++;
             }
-
-        t = 0;
-        for (int i = 0; i < start.length(); ++i)
-            if (start.charAt(i) == 'R') {
-                while (end.charAt(t) != 'R') t++;
-                if (i > t++) return false;
+            else if (start.charAt(i) == 'R') {
+                while (end.charAt(eIdx) != 'R') {
+                    eIdx++;
+                }
+                if (eIdx < i) {
+                    return false;
+                }
+                eIdx++;
             }
+        }
 
         return true;
     }
