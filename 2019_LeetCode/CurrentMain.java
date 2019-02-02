@@ -1,12 +1,14 @@
 import algorithm.related.design.L528_RandomPickWithWeight_M;
 import algorithm.related.structure.L315_CountSmaller_H;
 import bfs_or_dfs.L947_MostStonesRemovedWithSameRowOrCol_M;
+import binarysearch.L475_Heaters_E;
 import binarysearch.binary_search_test;
 import common.data.types.TreeNode;
 import custom_data_structure.L900_RLEIterator_M;
 import dynamic_programming.L135_Candy_H;
 import dynamic_programming.L562_LongestLineOfConsecutiveOneInMatrix_M;
 import heap_minqueue.L857_MinCostKWorkers_H;
+import string_processing.L524_LongestWordInDicThroughDeleting_M;
 import string_processing.L809_ExpressiveWords_M;
 import tree_traversal.L222_CountCompleteTreeNodes_M;
 import twopointers.hashmap.string.L18_4Sum_M;
@@ -18,7 +20,10 @@ import java.util.*;
 public class CurrentMain {
 
     public static void main(String[] args) {
-        L562_LongestLineOfConsecutiveOneInMatrix_M p = new L562_LongestLineOfConsecutiveOneInMatrix_M();
+        L524_LongestWordInDicThroughDeleting_M m = new L524_LongestWordInDicThroughDeleting_M();
+
+//        L475_Heaters_E h = new L475_Heaters_E();
+//        L562_LongestLineOfConsecutiveOneInMatrix_M p = new L562_LongestLineOfConsecutiveOneInMatrix_M();
 //        L900_RLEIterator_M m = new L900_RLEIterator_M();
 
 //        L809_ExpressiveWords_M e = new L809_ExpressiveWords_M();
