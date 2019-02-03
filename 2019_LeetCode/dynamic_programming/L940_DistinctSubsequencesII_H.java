@@ -108,7 +108,7 @@ public class L940_DistinctSubsequencesII_H {
             last[endDigit] = i;
         }
 
-        // overflow
+        // java modulo returns negative if the value is negative due to overflow
         if (dp[N] < 0) dp[N] += MOD;
         return dp[N] % MOD;
     }
