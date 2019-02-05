@@ -3,12 +3,15 @@ import algorithm.related.structure.L315_CountSmaller_H;
 import bfs_or_dfs.L947_MostStonesRemovedWithSameRowOrCol_M;
 import binarysearch.L475_Heaters_E;
 import binarysearch.binary_search_test;
+import com.company.TestClass;
 import common.data.types.TreeNode;
 import custom_data_structure.L900_RLEIterator_M;
+import custom_data_structure.MyCalendarTwo;
 import dynamic_programming.L135_Candy_H;
 import dynamic_programming.L562_LongestLineOfConsecutiveOneInMatrix_M;
 import dynamic_programming.L940_DistinctSubsequencesII_H;
 import heap_minqueue.L857_MinCostKWorkers_H;
+import string_processing.CustomSortString_M;
 import string_processing.L524_LongestWordInDicThroughDeleting_M;
 import string_processing.L809_ExpressiveWords_M;
 import tree_traversal.L222_CountCompleteTreeNodes_M;
@@ -19,9 +22,14 @@ import twopointers.hashmap.string.L833_FindAndReplaceInString_M;
 import java.util.*;
 
 public class CurrentMain {
+    // testClass to try out java cases
+    private TestClass testClass = new TestClass();
 
     public static void main(String[] args) {
-        L940_DistinctSubsequencesII_H h = new L940_DistinctSubsequencesII_H();
+
+
+//        CustomSortString_M s = new CustomSortString_M();
+//        L940_DistinctSubsequencesII_H h = new L940_DistinctSubsequencesII_H();
 //        L524_LongestWordInDicThroughDeleting_M m = new L524_LongestWordInDicThroughDeleting_M();
 
 //        L475_Heaters_E h = new L475_Heaters_E();

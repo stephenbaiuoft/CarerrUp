@@ -8,6 +8,24 @@ package com.company;
 //  mTest.checkStaticInheritance();
 public class TestClass {
 
+    public void check2DArray() {
+        // 0,0 is allowed --> so
+        int[][] test = new int[0][0];
+
+
+        if (test.length == 0) {
+            System.out.println("test.length == 0");
+
+        }
+
+        System.out.println("you can't check for test[0].length if test.length == 0");
+        if (test[0].length == 0) {
+            System.out.println("test[0].length == 0");
+        }
+        // int v = test[0][0];
+    }
+
+
     public void checkObjectEqual(){
 
     }
