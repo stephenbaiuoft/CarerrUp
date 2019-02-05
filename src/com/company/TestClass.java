@@ -1,5 +1,7 @@
 package com.company;
 
+import java.util.*;
+
 /**
  * Created by stephenbai on 2016-11-10.
  */
@@ -7,6 +9,29 @@ package com.company;
 //  TestClass mTest = new TestClass();
 //  mTest.checkStaticInheritance();
 public class TestClass {
+
+    public void mapComparator() {
+        // lambda expression for the map comparator
+        // (arg1, arg2) -> (1_expression)
+        // (arg1, arg2) -> {method body}! just like swift!!!!!!!
+        TreeMap<int[], Integer> map = new TreeMap<int[], Integer>((a,b) -> {
+            if (a[0] == b[0]) {
+                return a[1] - b[1];
+            }
+            return a[0] - b[0];
+        });
+        NavigableSet<int[]> nSet = new TreeSet<>((s1, s2) -> s1[0] *s1[1] - s2[0]*s2[1]);
+
+        Comparator<Integer> c = new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o1 - o2;
+            }
+        };
+        // only allowed to compare the key value!
+        SortedMap<Integer, Integer> sortedMap = new TreeMap<>(c);
+
+    }
 
     public void check2DArray() {
         // 0,0 is allowed --> so
