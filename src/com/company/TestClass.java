@@ -10,6 +10,19 @@ import java.util.*;
 //  mTest.checkStaticInheritance();
 public class TestClass {
 
+    // Java type 从左读到右边
+    //
+    public void typeDeclaration() {
+        // size of [], where each element is ArrayList
+        ArrayList<Integer>[] al = new ArrayList[10];
+
+        // from left to right:
+        // 1. inner type is int, and then
+        // 2. the next type is [] array ->
+        // 1+2 gives: int[] array!!!
+        int[] iAry = new int[10];
+
+    }
     public void mapComparator() {
         // lambda expression for the map comparator
         // (arg1, arg2) -> (1_expression)
