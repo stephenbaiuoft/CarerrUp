@@ -23,28 +23,24 @@ public class L22_GenerateParentheses_M {
     public List<String> generateParenthesis(int n) {
         // to store strings
         List<String> list = new LinkedList<>();
-        dfs(list, "", n, n);
+        dfs(list, "", 0, 0, n);
 
         return list;
     }
 
     // current string,
-    private void dfs(List<String> list, String cur, int leftCount, int rightCount) {
-        // base case --> all used already
-        if (leftCount == 0 && rightCount == 0) {
+    private void dfs(List<String> list, String cur, int curLeft, int curRight, int n) {
+        // add to list
+        if (cur.length() == 2*n) {
             list.add(cur);
-            return;
-        }
-        else if (leftCount > 0) {
-            dfs(list, cur + "(", leftCount - 1, rightCount);
-            if (leftCount < rightCount) {
-                // explore this as well
-                dfs(list, cur + ")", leftCount, rightCount - 1);
-            }
-        }
-        else { // leftCount == 0
-            dfs(list, cur + ")", leftCount, rightCount - 1);
         }
 
+        if (curLeft < n) {
+            dfs(list, cur + "(", curLeft+1, curRight, n);
+        }
+        // use another if for the other option 这个就比较make sense了 朋友
+        if (curRight < curLeft) { // must be strictly less than curLeft
+            dfs(list, cur + ")", curLeft, curRight+1, n);
+        }
     }
 }

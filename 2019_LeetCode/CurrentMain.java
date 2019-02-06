@@ -12,6 +12,7 @@ import dynamic_programming.L562_LongestLineOfConsecutiveOneInMatrix_M;
 import dynamic_programming.L940_DistinctSubsequencesII_H;
 import heap_minqueue.L857_MinCostKWorkers_H;
 import string_processing.CustomSortString_M;
+import string_processing.L316_RemoveDuplicateLetters;
 import string_processing.L524_LongestWordInDicThroughDeleting_M;
 import string_processing.L809_ExpressiveWords_M;
 import tree_traversal.L222_CountCompleteTreeNodes_M;
@@ -26,7 +27,7 @@ public class CurrentMain {
     private TestClass testClass = new TestClass();
 
     public static void main(String[] args) {
-
+        L316_RemoveDuplicateLetters r = new L316_RemoveDuplicateLetters();
 
 //        CustomSortString_M s = new CustomSortString_M();
 //        L940_DistinctSubsequencesII_H h = new L940_DistinctSubsequencesII_H();

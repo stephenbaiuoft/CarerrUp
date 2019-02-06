@@ -51,4 +51,35 @@ public class L17_LetterCombinations_M {
             dfs(list, digits, cur + s.substring(i, i +1), map);
         }
     }
+
+    // 用stringbuilder来做 就少一create一些memory
+    public List<String> letterCombinationsStringBuffer(String digits) {
+        List<String> list = new LinkedList<>();
+        if (digits == null || digits.length() == 0) return list;
+        String[] map = new String[] {
+                "","","abc","def","ghi","jkl","mno",
+                "pqrs", "tuv", "wxyz"
+        };
+
+        StringBuilder sb = new StringBuilder();
+        dfs(digits, sb, list, map);
+        return list;
+    }
+
+    private void dfs(String digits, StringBuilder sb, List<String> list, String[] map){
+        // base case
+        if (sb.length() == digits.length()) {
+            list.add(sb.toString());
+            return;
+        }
+
+        int dIdx = sb.length(); // get sb's current length
+        int mIdx = digits.charAt(dIdx) - '0';
+        char[] set = map[mIdx].toCharArray();
+        for (char c: set) {
+            dfs(digits, sb.append(c), list, map);
+            // remove last character
+            sb.deleteCharAt(sb.length() -1);
+        }
+    }
 }

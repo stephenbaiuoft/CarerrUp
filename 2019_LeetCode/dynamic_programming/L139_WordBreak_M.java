@@ -37,11 +37,10 @@ public class L139_WordBreak_M {
 
     public boolean wordBreakWithOptimization(String s, List<String> wordDict) {
         if (s == null || wordDict == null || wordDict.size() == 0) return false;
-
-        HashSet<String> set = new HashSet<>(wordDict);
-        boolean[] dp = new boolean[s.length() + 1];
+        // build the dic
+        HashSet<String> map = new HashSet<>(wordDict);
+        boolean[] dp = new boolean[s.length()+1];
         dp[0] = true;
-
         int l = wordDict.get(0).length();
         int h = l;
         for (String word: wordDict) {
@@ -50,21 +49,38 @@ public class L139_WordBreak_M {
             h = Math.max(h, word.length());
         }
 
+        for (int i = l; i <= s.length(); i++) {
+            // only search within the range of [i-h, i-l]
+            for (int j = i - h + 1< 1? 1: i-h+1; j <= i-l + 1; j++ ) {
+                // j is in terms of the substring inclusively
+                // so the substring including j-1, i
+                if (!dp[i]) {
+                    dp[i] = dp[j-1] && map.contains(s.substring(j-1, i));
+                }
+            }
+
+        }
+
+        return dp[s.length()];
+    }
+
+    // 最basic的解法 你考虑一下！
+    public boolean wordBreakDefault(String s, List<String> wordDict) {
+        // build the dic
+        HashSet<String> map = new HashSet<>(wordDict);
+        boolean[] dp = new boolean[s.length()+1];
+        dp[0] = true;
         for (int i = 1; i <= s.length(); i++) {
-            if (i >= l) {
-                // only search within the range of [i-h, i-l]
-                for (int j = i - h + 1< 1? 1: i-h+1; j <= i-l + 1; j++ ) {
-                    // j is in terms of the substring inclusively
-                    // so the substring including j-1, i
-                    if (dp[j-1] && set.contains(s.substring(j-1, i))) {
-                        dp[i] = true;
-                        break;// true already
-                    }
+            // j also refers to the dp index
+
+            // j <= i 因为你需要考虑 len=1的情况 ==> dp[0] && s.substring(0,1) == "a"
+            for (int j = 1; j <= i; j++) {
+                if (!dp[i]) {
+                    dp[i] = dp[j-1] && map.contains(s.substring(j-1,i));
                 }
             }
         }
 
         return dp[s.length()];
     }
-
 }
