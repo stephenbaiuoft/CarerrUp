@@ -4,7 +4,36 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 
-// example --> "cbacdcbc" 这个解法有问题
+/*
+* Given a string which contains only lowercase letters, remove duplicate letters so that every letter appear once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
+
+Example 1:
+
+Input: "bcabc"
+Output: "abc"
+Example 2:
+
+Input: "cbacdcbc"
+Output: "acdb"
+* */
+
+
+/* 思路
+* ## You find the smallest character to add by the following rule
+#r0: create a hashmap that stores the indexes of occurences for each character in order
+#r1: the smallest possbile character, with its first index 'i_smallest' of occurence being smallest than all other characters
+#r2. add this character and for all other characters, remove their occurence indexes that are smaller than 'i_smallest'
+#r3. continue until you have loop through all the possible characters.
+
+## Explaination / Why it works
+say you start with the smallest character c1, with iC1Left being the first index (use left to denote it's the first element) of occurence, now there are only two cases:
+* case 1:  there exists some larger character c2, with its index of iC2Right larger than iC1Left, in this case, we may safely ignore because lexigraphically, this c2 would be added later on
+
+* case 2: there  exists some larger character c2, with its index of iC2Right smaller than iC1Left, in this case, we CANNOT add c1, because lexigraphically, having c2 in front of c1 is correct.
+* case2.1: so we leave out c1, and find the next smaller character that meets our rule.
+* case2.2 When we found such a c1 character, then, all the other characters with indices smaller than iC1Left, should be taken out. This is because having such a c1 means that all the characters with indexes smaller than iC1Left are strictly smaller than c1.
+
+* */
 public class L316_RemoveDuplicateLetters {
     public L316_RemoveDuplicateLetters() {
         String s = "cbacdcbc";
