@@ -95,7 +95,12 @@ public class L316_RemoveDuplicateLetters {
                 // put in relative position for cMap
                 char tmp = (char) ('a' + minCharIdx);
                 sb.append(tmp);
-                // need to remove any larger character ahead of minChar if possible
+
+                // need to remove any larger character with indexes smaller than minPosForMinChar
+                // 因为你之所以可以选 minCharIdx 是因为 比minCharIdx大的character
+                // 一定只能是 在 minPosForMinChar 之后还有index （因为查的是right）
+                // 不然 minCharIdx就update成下一个满足条件的character了
+
                 for (int j = 0; j < minPosForMinChar; j++) {
                     ArrayList<Integer> l = map[s.charAt(j) - 'a'];
                     while (l != null && l.size() > 1
