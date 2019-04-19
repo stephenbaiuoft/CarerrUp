@@ -1,5 +1,6 @@
 import algorithm.related.design.L528_RandomPickWithWeight_M;
 import algorithm.related.structure.L315_CountSmaller_H;
+import algorithm.related.structure.NumArray;
 import bfs_or_dfs.L947_MostStonesRemovedWithSameRowOrCol_M;
 import binarysearch.L475_Heaters_E;
 import binarysearch.binary_search_test;
@@ -11,6 +12,8 @@ import dynamic_programming.L135_Candy_H;
 import dynamic_programming.L562_LongestLineOfConsecutiveOneInMatrix_M;
 import dynamic_programming.L940_DistinctSubsequencesII_H;
 import heap_minqueue.L857_MinCostKWorkers_H;
+import sorting.L973_KClosestPoints_M;
+import stack_array_property.L394_DecodeString_M;
 import string_processing.CustomSortString_M;
 import string_processing.L316_RemoveDuplicateLetters;
 import string_processing.L524_LongestWordInDicThroughDeleting_M;
@@ -27,7 +30,10 @@ public class CurrentMain {
     private TestClass testClass = new TestClass();
 
     public static void main(String[] args) {
-        L316_RemoveDuplicateLetters r = new L316_RemoveDuplicateLetters();
+        L394_DecodeString_M p = new L394_DecodeString_M();
+//        L973_KClosestPoints_M p = new L973_KClosestPoints_M();
+//        NumArray p = new NumArray();
+//        L316_RemoveDuplicateLetters r = new L316_RemoveDuplicateLetters();
 
 //        CustomSortString_M s = new CustomSortString_M();
 //        L940_DistinctSubsequencesII_H h = new L940_DistinctSubsequencesII_H();

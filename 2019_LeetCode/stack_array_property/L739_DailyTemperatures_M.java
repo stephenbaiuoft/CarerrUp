@@ -22,28 +22,6 @@ import java.util.Stack;
 *
 * */
 public class L739_DailyTemperatures_M {
-    public int[] dailyTemperatures(int[] T) {
-        int[] rez = new int[T.length];
-        // array to store indexes that are descending
-        int[] array = new int[T.length];
-        // array head -> -1 to indicate not initialized
-        int aHead = -1;
-
-        for (int i = 0; i < T.length; i++) {
-            // when we find that i is larger than the aHead elements
-            while (aHead > -1 && T[array[aHead]] < T[i]) {
-                int idx = array[aHead]; // get the index
-                rez[idx] = i - idx; // compute the off set
-                aHead--; // update the aHead to go to the next potential smaller value
-            }
-
-            // aHead is > -1 or T[ array[aHead] ] is actually >= T[i]
-            aHead ++; // update aHead to move to next available spot
-            array[aHead] = i; // save i index
-        }
-
-        return rez;
-    }
 
     // 注意stack是 FILO！！！or LIFO (so last in, first out and order is exactly what we need given left to right order
     // queue FIFO
