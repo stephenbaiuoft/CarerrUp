@@ -106,7 +106,7 @@ class Graph
         }
     }
 
-    // The main function to construct MST using Kruskal's algorithm
+    // The LintMain function to construct MST using Kruskal's algorithm
     void KruskalMST()
     {
         Edge result[] = new Edge[V]; // Tnis will store the resultant MST

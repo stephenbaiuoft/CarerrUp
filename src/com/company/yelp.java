@@ -60,7 +60,7 @@ class Solution {
         //TODO: COMPLETE ME
     }
 
-    public static void main(String[] args) {
+    public static void LintMain(String[] args) {
         String line;
         List<BusinessInfo> businessInfoList = new ArrayList<>();
         try {

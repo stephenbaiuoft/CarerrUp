@@ -29,7 +29,7 @@ public class CheckSubTree {
     //
     public boolean ifSubTree( Node root, Node T ){
 
-        // leaf null, then no need to check main root
+        // leaf null, then no need to check LintMain root
         if ( T == null) return true;
         // root null, then cannot match as ( leaf is null ) already returns True
         if ( root  == null ) return false;
