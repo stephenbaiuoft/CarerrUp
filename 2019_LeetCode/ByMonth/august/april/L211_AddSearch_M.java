@@ -43,11 +43,11 @@ public class L211_AddSearch_M {
         if (k == word.length() ) return node.isWord;
         // else
         char c = word.charAt(k);
-        // recursion
+        // sortalgo
         if (c == '.') {
             for(int i = 0; i <26; i++) {
-                // note this recursion
-                // True will ONLY be returned iff all the rest of recursion returns True!!!!
+                // note this sortalgo
+                // True will ONLY be returned iff all the rest of sortalgo returns True!!!!
                 if (node.children[i] != null && searchHelper(word, k+1, node.children[i])) {
                     return true;
                 }

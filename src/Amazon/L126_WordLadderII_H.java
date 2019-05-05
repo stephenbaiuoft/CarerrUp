@@ -144,7 +144,7 @@ public class L126_WordLadderII_H {
         return results;
     }
 
-    // the key is result and understanding recursion!!
+    // the key is result and understanding sortalgo!!
     private void dfs(String beginWord, String endWord, HashMap<String,
             List<String>> neighbourMap, HashMap<String, Integer> distance, LinkedList<String> result, List<List<String>> results ) {
 

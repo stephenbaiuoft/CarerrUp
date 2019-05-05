@@ -1,4 +1,4 @@
-package Codebase.recursion;
+package Codebase.sortalgo;
 
 /*
 * Description

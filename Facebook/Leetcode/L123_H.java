@@ -39,7 +39,7 @@ public class L123_H {
         return gMax;
     }
 
-    // dfs recursion to compute the maximum path value including this node
+    // dfs sortalgo to compute the maximum path value including this node
     private int dfs(TreeNode node) {
         if (node == null) return 0;
         int left = dfs(node.left);

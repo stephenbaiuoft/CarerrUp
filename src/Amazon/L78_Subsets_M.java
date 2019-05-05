@@ -53,7 +53,7 @@ public class L78_Subsets_M {
         for(int i = index; i < nums.length; i++){
             //first piece
             solution.add(nums[i]);
-            // now pass to backTrack recursion to continue build on previous pieces!!
+            // now pass to backTrack sortalgo to continue build on previous pieces!!
             backTrack(nums, i + 1, solutionSet, solution);
             // the alternative first piece
             solution.removeLast();

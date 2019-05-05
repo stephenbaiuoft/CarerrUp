@@ -1,4 +1,4 @@
-package Codebase.recursion;
+package Codebase.sortalgo;
 
 /*
 
@@ -35,9 +35,12 @@ public class L5_KthLargestElement_M {
     }
 
     // define a function with searching lower and upper bound until reaching nth SMALLEST element
+    // this is the quicksort template
     private int quickSelect(int n, int[] nums, int lower, int upper) {
         if (lower >= upper) {
             return nums[n]; // why returning nums[n]???
+            // 因为你已经在每一次sort这个nums的array 根据pivot这个value， left 和 right 确定
+            //      left之前的都小于pivot 已经 right之后的都大于pivot！！！！！很精辟的解法
         }
         int mid = lower + (upper - lower) / 2;
         // take the mid index as pivot value
@@ -74,11 +77,11 @@ public class L5_KthLargestElement_M {
 
     }
 
-
+    // dont use xor because same values would result in 0!!!!! important
     private void swap(int[] nums, int i, int j) {
-        nums[i] ^= nums[j];
-        nums[j] ^= nums[i];
-        nums[i] ^= nums[j];
+        int tmp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = tmp;
     }
 
 

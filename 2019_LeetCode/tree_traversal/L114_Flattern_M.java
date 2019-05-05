@@ -38,10 +38,10 @@ public class L114_Flattern_M {
     // prev keeps track of
     private TreeNode prev = null;
     // flattern order is preOrder
-    // recursion order --> node, v(left), v(right)
+    // sortalgo order --> node, v(left), v(right)
     // given the example will be: 1, 2, 3, 4, 5, 6
 
-    // recursion reverse order => v(right), v(left), node! (很重要)
+    // sortalgo reverse order => v(right), v(left), node! (很重要)
     // given the example will be -> 6, 5, 4, 3, 2, 1
 
     public void flatten(TreeNode root) {

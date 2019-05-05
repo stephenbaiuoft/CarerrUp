@@ -21,7 +21,7 @@ class TreeNode {
     }
 }
 
-// recursion, O ( N^2 ) complexity as every node is recurred
+// sortalgo, O ( N^2 ) complexity as every node is recurred
 // Try DP with O (N )
 public class TreeAmplitude {
     TreeNode root;

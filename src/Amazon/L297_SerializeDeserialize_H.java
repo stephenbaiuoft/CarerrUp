@@ -3,7 +3,7 @@ import java.sql.Struct;
 import java.util.*;
 
 
-// understad the importance of pre-order and recursion
+// understad the importance of pre-order and sortalgo
 // because apparently u always!! needs to root node
 public class L297_SerializeDeserialize_H {
 
