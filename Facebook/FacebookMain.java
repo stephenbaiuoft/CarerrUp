@@ -5,7 +5,8 @@ import java.util.*;
 public class FacebookMain {
     // Java: initial entry point declaration format!!!
     public static void main(String[] args) {
-
+        L33_SearchRotated_M p = new L33_SearchRotated_M();
+        p.runTest();
 
 
 //        L498_M p = new L498_M();

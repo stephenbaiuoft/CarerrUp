@@ -1,6 +1,15 @@
 package Leetcode;
 
 public class L33_SearchRotated_M {
+    public void runTest() {
+        int[] rez = new int[] {
+                4,4,4,5,1,4
+        };
+
+        int v = search(rez, 5);
+        System.out.println(v);
+    }
+
     public int search(int[] nums, int target) {
         if (nums == null || nums.length ==0) return -1;
         int minIdx = findMinIdx(nums);
