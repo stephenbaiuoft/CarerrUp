@@ -3,7 +3,7 @@ package common.helpermethods;
 import java.util.List;
 
 public class Helper {
-
+    // generics usage
     public static <Element> void printList(List<Element> list) {
         if (list == null) {
             System.out.println("List Data Invalid");

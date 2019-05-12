@@ -9,14 +9,14 @@ import java.util.PriorityQueue;
 public class FindMedian {
 // Priority Queue: default largest is always first element
 // Note sort is always in Ascending Order this - object....whatever/ or compare?
-    //Left-> First is the largest
-    PriorityQueue <Integer> leftQueue = new PriorityQueue<>(Comparator.reverseOrder());
+            //Left-> First is the largest
+            PriorityQueue <Integer> leftQueue = new PriorityQueue<>(Comparator.reverseOrder());
 
-    //Right-> First is the smallest among Heap
-    PriorityQueue <Integer> rightQueue
-            = new PriorityQueue<>( );
+        //Right-> First is the smallest among Heap
+        PriorityQueue <Integer> rightQueue
+                = new PriorityQueue<>( );
 
-    public void addNum(int num){
+        public void addNum(int num){
         // step 1 insert
         if (leftQueue.isEmpty()){
             leftQueue.add( num );

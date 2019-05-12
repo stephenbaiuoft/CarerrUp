@@ -57,7 +57,7 @@ public class L532_ReversePairs_M {
         int leftStartIndex = start; // array on the left
         int rightStartIndex = mid+1; // array on the right --> visualize the entire merging process
         int mergeStartIndex = start; // where the start of the merging array is
-        int count = 0;
+        int count = 0;       
 
         // doing comparison
         while (leftStartIndex <= mid && rightStartIndex <= end) {
