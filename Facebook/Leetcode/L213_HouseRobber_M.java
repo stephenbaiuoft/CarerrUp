@@ -9,7 +9,7 @@ public class L213_HouseRobber_M {
     }
 
     public int rob(int[] nums) {
-        // classic dp
+        // classic DP
         // 2 cases: c1 starting 0 - n-2 (first one to second last)
         //          c2 starting 1 - n-1 (second one to last one)
         if (nums == null || nums.length < 1) return 0;
@@ -32,7 +32,7 @@ public class L213_HouseRobber_M {
         // make sure increment sIndex
         dp[1] = nums[sIndex++];
 
-        // di is the index for dp array
+        // di is the index for DP array
         for(int di = 2; di <= n; di++) {
             // make sure increment sIndex!!!!
             dp[di] = Math.max(dp[di-1], nums[sIndex++] + dp[di-2]);

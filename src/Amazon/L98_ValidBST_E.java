@@ -4,7 +4,7 @@ package Amazon;
  * Created by stephen on 7/20/17.
  */
 /**
- *Given a binary tree, determine if it is a valid binary search tree (BST).
+ *Given a binary Tree, determine if it is a valid binary search Tree (BST).
 
  Assume a BST is defined as follows:
 
@@ -15,7 +15,7 @@ package Amazon;
  2
  / \
  1   3
- Binary tree [2,1,3], return true.
+ Binary Tree [2,1,3], return true.
 
  //Idea: BST: left has to be smaller than root, right has to be greater than root
  */

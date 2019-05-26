@@ -40,7 +40,7 @@ public class L733_E {
 
     private void dfs(int[][] image, int sr, int sc, int color, int newColor) {
         // base condition
-        // && the image[sr][sc] = color condition --> to avoid endless sortalgo
+        // && the image[sr][sc] = color condition --> to avoid endless SortAlgo
         if (sr>=0 && sr < image.length && sc >= 0 && sc < image[0].length && image[sr][sc] == color) {
             image[sr][sc] = newColor;
             // go in 4 direction

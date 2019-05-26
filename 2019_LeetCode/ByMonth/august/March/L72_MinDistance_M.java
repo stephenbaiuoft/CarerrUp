@@ -4,9 +4,9 @@ public class L72_MinDistance_M {
     public int minDistance(String word1, String word2) {
         int m = word1.length();
         int n = word2.length();
-        // the dp array
-        // dp[m][n] --> the cost to match m_th character with n_th character
-        // initially, change dp[i][0] would be i (replacing i characters) and vice versa
+        // the DP array
+        // DP[m][n] --> the cost to match m_th character with n_th character
+        // initially, change DP[i][0] would be i (replacing i characters) and vice versa
         int[][] dp = new int[m+1][n+1];
         for(int i = 0; i <=m; i++) {
             dp[i][0] = i;
@@ -14,7 +14,7 @@ public class L72_MinDistance_M {
         for(int i = 0; i <=n; i++) {
             dp[0][i] = i;
         }
-        // the dp solution
+        // the DP solution
         for(int i = 1; i <=m; i++) {
             for(int j = 1; j<=n; j++) {
                 if(word1.charAt(i-1) == word2.charAt(j-1)) {

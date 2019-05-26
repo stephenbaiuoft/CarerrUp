@@ -9,7 +9,7 @@ public class L55_CanJump_M {
     *   O(n) with O(1)
     * */
     public boolean canJump(int[] nums) {
-        // dp problem
+        // DP problem
         // given all integers and we build from smallest to largest
         if (nums == null || nums.length ==0) return false;
         // init
@@ -29,7 +29,7 @@ public class L55_CanJump_M {
     * dp就很蠢了 O(n^2)和 O(n)的space 所以 想一想有没有greedy solution可以工作就用greedy
     * */
     public boolean canJumpDp(int[] nums) {
-        // dp problem
+        // DP problem
         // given all integers and we build from smallest to largest
         if (nums == null || nums.length ==0) return false;
         boolean[] dp = new boolean[nums.length];

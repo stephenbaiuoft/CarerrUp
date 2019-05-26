@@ -22,7 +22,7 @@ Example 2:
 Input: stones = [[0,0],[0,2],[1,1],[2,0],[2,2]]
 Output: 3
 
-思路： 就是建立 graph 然后发现 # of edges   - 1 就是 最大的可以remove的stone的数量
+思路： 就是建立 Graph 然后发现 # of edges   - 1 就是 最大的可以remove的stone的数量
 重要的事情 ==》 怎么建立这个一个graph 根据given int[][] stones很重要！！！！
 
 1. each edge is independent of another edge, (there is a way to do so)
@@ -44,7 +44,7 @@ public class L947_MostStonesRemovedWithSameRowOrCol_M {
 
     public int removeStones(int[][] stones) {
         if (stones == null || stones.length == 0) return 0;
-        // let's build a graph of graph[n][n], where graph[i][0],
+        // let's build a Graph of Graph[n][n], where Graph[i][0],
         // denotes the i node, and [i][0], the 0 is used to indicate tot number of nodes connected to node i
         // set n = stones.length --》 that's the maximum # of edges possible - 1 ( because 2 nodes makes 1 edge)
         int n = stones.length;
@@ -52,7 +52,7 @@ public class L947_MostStonesRemovedWithSameRowOrCol_M {
         int[][] nodeGraph = new int[n][n];
 
 
-        // iterate through the graph, where [i][0] element is used to denote total number of edges connected to ith node
+        // iterate through the Graph, where [i][0] element is used to denote total number of edges connected to ith node
         for (int i = 0; i < n; i++) {
             for (int j = i + 1; j < n; j++) {
                 // connected condition --> same row or col --> ith's node row [i][0] == jth's node row [j][0]
@@ -69,13 +69,13 @@ public class L947_MostStonesRemovedWithSameRowOrCol_M {
         // visited to indicate whether a node has been visited or not
         boolean[] visited = new boolean[n];
         int totEdges = 0;
-        // we need to traverse through the graph, and for each node, find # of edges linked to it
+        // we need to traverse through the Graph, and for each node, find # of edges linked to it
         // and, once a node is explored, then we skip that node only, we don't mark its neighbors as visited（这点很重要)
         // # of edges = # of nodes - 1
 
         // traverse through each nodeI, and find its neighbors and find tot # of edges
         for (int nodeI = 0; nodeI < n; nodeI++ ) {
-            // bfs find all edges
+            // BFS find all edges
             if (!visited[nodeI]) {
 
 

@@ -5,7 +5,7 @@ public class NumArray {
 
     public NumArray() {
         int[] nums = new int[]{1,3,5};
-        // build the segment tree
+        // build the segment Tree
         root = buildTree(nums, 0, nums.length-1);
 
         int val  = sumRange(0,2);

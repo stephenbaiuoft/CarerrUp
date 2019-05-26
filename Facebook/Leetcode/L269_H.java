@@ -49,7 +49,7 @@ There may be multiple valid order of letters, return any one of them is fine.
 * 解题思路！！！
 * 注意 给你的order的顺序是排好的 问题只是字母的相对应顺序没有
 * 所以：
-* build a graph based on indegree of each node!!!
+* build a Graph based on indegree of each node!!!
 * 因为 假设 b -> a, c -> a, d - >c 那
 *    a的indegree为2
 *    b为0

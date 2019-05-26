@@ -9,7 +9,7 @@ public class L107_BTLevelTraversal_E {
         // return empty
         if(root == null) return rez;
 
-        // a queue to traverse through the tree structure
+        // a queue to traverse through the Tree structure
         LinkedList<TreeNode> queue = new LinkedList<>();
         // add root
         queue.add(root);

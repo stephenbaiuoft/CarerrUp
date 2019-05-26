@@ -34,7 +34,7 @@ public class L322_CoinChange_M {
         for(int i = 0; i <= amount; i++) {
             for(int coin: coins) {
                 if (i>= coin) {
-                    // 思路--》 这里一定是 dp[i-coin]+1 ！！ 很重要 因为是min是最外的决定！！
+                    // 思路--》 这里一定是 DP[i-coin]+1 ！！ 很重要 因为是min是最外的决定！！
                     dp[i] = Math.min(dp[i], dp[i-coin] + 1);
                 }
             }

@@ -6,12 +6,12 @@ public class Q2 {
     // Complete the MinSliceWeight function below.
     // Complete the MinSliceWeight function below.
     public static int minSliceWeight(List<List<Integer>> Matrix) {
-        //dp solution
+        //DP solution
         //assuming the input is N X N
         // base case
         if (Matrix == null || Matrix.size() < 1) return 0;
 
-        // dp to store values
+        // DP to store values
         int n = Matrix.size();
         if (n == 1) {
             return Matrix.get(0).get(0) ;

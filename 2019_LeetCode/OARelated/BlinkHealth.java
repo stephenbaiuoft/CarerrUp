@@ -5,7 +5,7 @@ import java.util.*;
 public class BlinkHealth {
 
 /*
-Write code to parse urls into a sitemap tree structure and display it as text. For example, the following urls will result in this printed structure.
+Write code to parse urls into a sitemap Tree structure and display it as text. For example, the following urls will result in this printed structure.
 
 Milestones:
 1. Parse routes into data structure

@@ -46,7 +46,7 @@ public class L91_DecodeWays_M {
         if(s == null || s.length() == 0) {
             return 0;
         }
-        //store dp values
+        //store DP values
         int[] dp = new int[s.length()+1];
         dp[0] = 1;
         dp[1] = s.charAt(0) == '0' ? 0 : 1;

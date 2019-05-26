@@ -40,7 +40,7 @@ public class AVLTree {
             treeBalance(node.right);
         }
     }
-    // prints order & height of this AVL tree
+    // prints order & height of this AVL Tree
     public void postOrder(AVLNode node){
         if (node!=null) {
             System.out.println("val: " + node.data + " h: " + node.height);
@@ -50,7 +50,7 @@ public class AVLTree {
         }
     }
 
-    // prints order & height of this AVL tree
+    // prints order & height of this AVL Tree
     public void preOrder(AVLNode node){
         if (node!=null) {
             preOrder(node.left);
@@ -66,7 +66,7 @@ public class AVLTree {
     }
 
 
-    // inserting a value onto the tree
+    // inserting a value onto the Tree
     public AVLNode insert(AVLNode node, int val){
         // base case
         if (node == null){

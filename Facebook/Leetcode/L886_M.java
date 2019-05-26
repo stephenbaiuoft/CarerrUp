@@ -16,14 +16,14 @@ public class L886_M {
 
     public boolean possibleBipartition(int N, int[][] dislikes) {
         int[][] map = new int[N+1][N+1];
-        // build the map graph
+        // build the map Graph
         // based on dislikes <--> s.t you can map to each other
         for(int[] dislike: dislikes) {
             map[dislike[0]][dislike[1]] = 1;
             map[dislike[1]][dislike[0]] = 1;
         }
 
-        // Key!!! dfs! 因为 think about the sample
+        // Key!!! DFS! 因为 think about the sample
         // [1,3], [4,2], [2,3] 如果不是dfs来做 其实result是false
         // 但是其实是可以分开的 (1,2) (4,3) 就可以!!!
 
@@ -37,7 +37,7 @@ public class L886_M {
         return true;
     }
 
-    // dfs that person's list, person and person's value marked
+    // DFS that person's list, person and person's value marked
     // false if cannot separate!!!
     private boolean dfs(int[] visited, int[][] map, int person, int pVal) {
         // base case

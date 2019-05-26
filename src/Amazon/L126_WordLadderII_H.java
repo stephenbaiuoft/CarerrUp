@@ -28,7 +28,7 @@ import java.util.*;
 
  */
 /**
- * Idea: Use BFS for neighbours and constructing the tree with shortestPath to each node
+ * Idea: Use BFS for neighbours and constructing the Tree with shortestPath to each node
  *       Use DFS to iterate through and check if
  */
 
@@ -144,7 +144,7 @@ public class L126_WordLadderII_H {
         return results;
     }
 
-    // the key is result and understanding sortalgo!!
+    // the key is result and understanding SortAlgo!!
     private void dfs(String beginWord, String endWord, HashMap<String,
             List<String>> neighbourMap, HashMap<String, Integer> distance, LinkedList<String> result, List<List<String>> results ) {
 

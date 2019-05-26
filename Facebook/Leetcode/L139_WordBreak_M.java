@@ -26,9 +26,9 @@ public class L139_WordBreak_M {
         // ALWAYS THINK INDEX IN TERMS OF DP INDEX AND
         // WHICH INDEX DOES THE DP Correspond to
 
-        // have j to i, where is the last index of dp
+        // have j to i, where is the last index of DP
         for(int i = 1; i <= s.length(); i++ ) {
-            // use j to navigate through dp and
+            // use j to navigate through DP and
             // also check for substring
             for (int j = 0; j < i; j++) {
                 // make sure j (starting from 1 to N characters) is True
@@ -51,7 +51,7 @@ public class L139_WordBreak_M {
         HashSet<String> set = new HashSet<>(wordDict);
         boolean[] dp = new boolean[s.length()+1];
         dp[0] = true;
-        // logic --> i is in terms of dp[]
+        // logic --> i is in terms of DP[]
         for(int i = 1; i <= s.length(); i++) {
             // check each word
             for(String word: wordDict) {

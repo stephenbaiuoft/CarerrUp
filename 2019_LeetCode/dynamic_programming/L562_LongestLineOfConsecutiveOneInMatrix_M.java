@@ -31,7 +31,7 @@ public class L562_LongestLineOfConsecutiveOneInMatrix_M {
             // from left to right
 
             for (int j = 0; j < M[0].length; j++) {
-                // only case when it is 1 we update dp right
+                // only case when it is 1 we update DP right
                 if (M[i][j] == 1) {
                     // update horizontal
                     if (j-1 < 0) {

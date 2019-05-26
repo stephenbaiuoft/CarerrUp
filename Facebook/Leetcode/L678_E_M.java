@@ -13,12 +13,12 @@ public class L678_E_M {
         return gMax;
     }
 
-    // this sortalgo
+    // this SortAlgo
     // 1.--> you must include this node
     // 2.--> you ONLY increment IFF prevValue equals to this node's value
     private int longestPathFromNode(TreeNode node, int preValue) {
         if (node == null) return 0;
-        // Check this out: you now put the node.val to the next sortalgo!!!!
+        // Check this out: you now put the node.val to the next SortAlgo!!!!
         int left = longestPathFromNode(node.left, node.val);
         int right = longestPathFromNode(node.right, node.val);
         int count = 0;

@@ -5,7 +5,7 @@ public class L198_HouseRobber_E {
     // idea
     // each spot is either rob or not rob
     // and save the max of that operation
-    // --> dp[i] the maximum one can rob from up to i index!!!!!
+    // --> DP[i] the maximum one can rob from up to i index!!!!!
     public int rob(int[] nums) {
         if(nums == null || nums.length == 0) return 0;
         int[] dp = new int[nums.length+1];

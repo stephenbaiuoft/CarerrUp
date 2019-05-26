@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.LinkedList;
 
 public class L207_M {
-    // save visited nodes so far with dfs
+    // save visited nodes so far with DFS
     // save iterations
     public HashSet<Integer> dfsMap = new HashSet<>();
 
@@ -30,7 +30,7 @@ public class L207_M {
     }
 
 
-    // traverse through v iterative with dfs
+    // traverse through v iterative with DFS
     private boolean containCycle(LinkedList<LinkedList<Integer>>map, HashSet<Integer> visited, int v) {
         // dfsMap already traversed, then
         if (dfsMap.contains(v) && !visited.contains(v)) {

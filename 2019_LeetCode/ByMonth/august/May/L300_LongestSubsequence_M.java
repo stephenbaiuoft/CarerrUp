@@ -3,7 +3,7 @@ package ByMonth.august.May;
 import java.util.Arrays;
 
 public class L300_LongestSubsequence_M {
-    // n^2 solution with dp
+    // n^2 solution with DP
     public L300_LongestSubsequence_M() {
         int[] input = new int[] {
              2,3,10,9,1,5,7,8
@@ -63,7 +63,7 @@ public class L300_LongestSubsequence_M {
         if (nums == null || nums.length == 0) return 0;
 
         int[] dp = new int[nums.length];
-        // fill dp with 1s
+        // fill DP with 1s
         Arrays.fill(dp, 1);
 
         int n = nums.length;

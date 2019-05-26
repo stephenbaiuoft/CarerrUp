@@ -21,7 +21,7 @@ public class L139_WordBreak_M {
         HashSet<String> set = new HashSet<>(wordDict);
         boolean[] dp = new boolean[s.length()+1];
         dp[0] = true;
-        // logic --> i is in terms of dp[]
+        // logic --> i is in terms of DP[]
         for(int i = 1; i <= s.length(); i++) {
             // check each word
             for(String word: wordDict) {
@@ -71,9 +71,9 @@ public class L139_WordBreak_M {
         boolean[] dp = new boolean[s.length()+1];
         dp[0] = true;
         for (int i = 1; i <= s.length(); i++) {
-            // j also refers to the dp index
+            // j also refers to the DP index
 
-            // j <= i 因为你需要考虑 len=1的情况 ==> dp[0] && s.substring(0,1) == "a"
+            // j <= i 因为你需要考虑 len=1的情况 ==> DP[0] && s.substring(0,1) == "a"
             for (int j = 1; j <= i; j++) {
                 if (!dp[i]) {
                     dp[i] = dp[j-1] && map.contains(s.substring(j-1,i));

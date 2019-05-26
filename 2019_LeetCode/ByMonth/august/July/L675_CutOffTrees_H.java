@@ -32,7 +32,7 @@ public class L675_CutOffTrees_H {
         // default starting point
         int[] start = new int[2];
         int[] nextTree = null;
-        // traverse through the tree in order !!!
+        // traverse through the Tree in order !!!
         while(!pq.isEmpty()) {
             nextTree = pq.poll();
             int val = sPath(start, nextTree, forest, m, n);
@@ -68,7 +68,7 @@ public class L675_CutOffTrees_H {
                 if (cur[0] == endTree[0] && cur[1] == endTree[1]) return sum;
                 // mark as visited
                 visited[cur[0]][cur[1]] = true;
-                // bfs trick
+                // BFS trick
                 int nr = 0, nc = 0;
                 for(int[] d: dir) {
                     nr = cur[0] + d[0];

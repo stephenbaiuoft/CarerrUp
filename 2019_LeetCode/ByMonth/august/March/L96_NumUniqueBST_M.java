@@ -1,7 +1,7 @@
 package ByMonth.august.March;
 
 // think of the # of left possible solutions * # of right possible solutions
-// --> look @ the tree structure ==> you should understand!
+// --> look @ the Tree structure ==> you should understand!
 public class L96_NumUniqueBST_M {
 
 

@@ -4,7 +4,7 @@ package Trees;
  * Created by stephenbai on 2016-11-08.
  */
 
-// prints tree node in corresponding order
+// prints Tree node in corresponding order
 public class TreeOrder {
     public void preOrder(Node root){
         if(root!=null){

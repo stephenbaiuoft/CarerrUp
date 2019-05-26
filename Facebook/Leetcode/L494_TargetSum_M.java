@@ -15,8 +15,8 @@ public class L494_TargetSum_M {
                     // each i, you run adjacent to relative to i
                      next[k + nums[i]] += dp[k];
                      next[k - nums[i]] += dp[k];
-//                    dp[k + nums[i]] += dp[k];
-//                    dp[k - nums[i]] += dp[k];
+//                    DP[k + nums[i]] += DP[k];
+//                    DP[k - nums[i]] += DP[k];
                 }
             }
             dp = next;

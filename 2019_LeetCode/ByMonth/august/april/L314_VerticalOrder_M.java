@@ -24,7 +24,7 @@ public class L314_VerticalOrder_M {
         return rez;
     }
 
-    // priviate function that will traverse the tree (note node is the root)
+    // priviate function that will traverse the Tree (note node is the root)
     // based on the colRank system, where to the left is -1, and to the right is +1
     // treemap is used s.t vertical col order is maintained  ==> (the col rank)
     private void bfsTree(TreeNode node, TreeMap<Integer, List<Integer>> tMap) {

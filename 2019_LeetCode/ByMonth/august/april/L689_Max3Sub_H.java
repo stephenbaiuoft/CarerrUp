@@ -13,9 +13,9 @@ public class L689_Max3Sub_H {
         // sum accumulative sum results
         // sum[k] - sum[0] (sum[0] = 0 by default ==> k values)
         int sum[] = new int[nums.length+1];
-        // left (dp array storing the max index from the left)
+        // left (DP array storing the max index from the left)
         int left[] = new int[nums.length];
-        // right (dp array storing te max index from the right)
+        // right (DP array storing te max index from the right)
         int right[] = new int[nums.length];
 
 

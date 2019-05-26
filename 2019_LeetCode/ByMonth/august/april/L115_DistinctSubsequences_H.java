@@ -5,7 +5,7 @@ public class L115_DistinctSubsequences_H {
         if(s == null || t ==null ) return 0;
 
         int [][] dp = new int[s.length()+1][t.length()+1];
-        // default where we know that dp[i][0] = 1 for 0 for t is empty "" testing.string
+        // default where we know that DP[i][0] = 1 for 0 for t is empty "" testing.string
         for(int i = 0; i <= s.length(); i++) {
             dp[i][0] = 1;
         }
@@ -15,8 +15,8 @@ public class L115_DistinctSubsequences_H {
                 // case when the character is equal then we know:
                 if(s.charAt(i-1) == t.charAt(j-1)) {
                     // # of subsequences are
-                    //  i. dp[i-1][j] ==> previous character count
-                    //  ii. dp[i-1][j-1] ==> previous character in both two strings
+                    //  i. DP[i-1][j] ==> previous character count
+                    //  ii. DP[i-1][j-1] ==> previous character in both two strings
                     dp[i][j] = dp[i-1][j] + dp[i-1][j-1];
                 } else {
                     // is equal to previous i-1 set

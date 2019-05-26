@@ -61,7 +61,7 @@ public class TrieTree {
 
     }
 
-    // find the node, containing the prefix ==> i'll use sortalgo later to get all strings
+    // find the node, containing the prefix ==> i'll use SortAlgo later to get all strings
     private TrieNode searchNode(String prefix, TrieNode node) {
         HashMap childMap = node.childMap;
         TrieNode p = null;

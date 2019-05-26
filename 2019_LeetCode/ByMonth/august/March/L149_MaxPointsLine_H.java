@@ -99,7 +99,7 @@ public class L149_MaxPointsLine_H {
     private int gcd(int a, int b) {
         if(b == 0) return a;
         else {
-            // sortalgo
+            // SortAlgo
             return gcd(b, a%b);
         }
     }

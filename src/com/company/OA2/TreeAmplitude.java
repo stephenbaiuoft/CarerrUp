@@ -5,8 +5,8 @@ package com.company.OA2;
  */
 
 /**
- * tree amplitutde:
- * the maximum difference among tree node values of all paths
+ * Tree amplitutde:
+ * the maximum difference among Tree node values of all paths
  */
 
 class TreeNode {
@@ -21,7 +21,7 @@ class TreeNode {
     }
 }
 
-// sortalgo, O ( N^2 ) complexity as every node is recurred
+// SortAlgo, O ( N^2 ) complexity as every node is recurred
 // Try DP with O (N )
 public class TreeAmplitude {
     TreeNode root;

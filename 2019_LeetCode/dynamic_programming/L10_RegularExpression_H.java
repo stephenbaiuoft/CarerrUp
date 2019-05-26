@@ -65,7 +65,7 @@ public class L10_RegularExpression_H {
                             // - 比如 <<<a*(*等于1) vs a >>>，
                             // - 比如 <<<a*(*等于2) vs aa >>>
                             // 所以相当于 s 这个string的上一个index 和 当前此pattern的 p相对比!!! 当前很重要！
-                            // dp[pi][si-1] 太重要了 因为 1个或者多个(>=2)一定是 在forloop中构造出来的
+                            // DP[pi][si-1] 太重要了 因为 1个或者多个(>=2)一定是 在forloop中构造出来的
                             // 而且是------> s一直在和p在match 就非常重要
                             // 你想 如果是* = 1个就是s的previous *=2个， 在loop中 还是s的previous
                             (dp[pi][si - 1] &&

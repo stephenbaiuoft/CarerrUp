@@ -31,7 +31,7 @@ public class BoxStacking_M {
                     // 因为order是 0 index 最大的面积 --> so j going from 0 to ith
                     // so --> boxes[j][1] >= boxes[i][1] && boxes[j][2] >= boxes[i][2]
                     if (boxes[j][1] >= boxes[i][1] && boxes[j][2] >= boxes[i][2]) {
-                        // 所以是 dp[j] + boxes[i][0] given this ith box, and [j] is
+                        // 所以是 DP[j] + boxes[i][0] given this ith box, and [j] is
                         // maximum height stacked so far
                         dp[i] = Math.max(dp[i], dp[j] + boxes[i][0]);
                     }

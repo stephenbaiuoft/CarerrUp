@@ -15,7 +15,7 @@ public class L449_SerializeDeserialize_M {
     private String nullCharacter = "x";
     private String separator = ",";
 
-    // Encodes a tree to a single testing.string.
+    // Encodes a Tree to a single testing.string.
     public String serialize(TreeNode root) {
 
         StringBuilder buffer = new StringBuilder();
@@ -34,7 +34,7 @@ public class L449_SerializeDeserialize_M {
     }
 
 
-    // Decodes your encoded data to tree.
+    // Decodes your encoded data to Tree.
     public TreeNode deserialize(String data) {
         String[] components = data.split(separator);
 

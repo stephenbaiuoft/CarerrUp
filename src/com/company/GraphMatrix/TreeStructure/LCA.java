@@ -55,7 +55,7 @@ public class LCA {
         ArrayDeque <Node> aPath = new ArrayDeque<Node>();
         ArrayDeque <Node> bPath = new ArrayDeque<Node>();
 
-        // Assuming a && b exists in the tree
+        // Assuming a && b exists in the Tree
         getPath(root, a.key, aPath);
         getPath(root, b.key, bPath);
 

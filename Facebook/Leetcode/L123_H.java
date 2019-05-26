@@ -3,9 +3,9 @@ package Leetcode;
 
 /*
 *
-    Given a non-empty binary tree, find the maximum path sum.
+    Given a non-empty binary Tree, find the maximum path sum.
 
-    For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need to go through the root.
+    For this problem, a path is defined as any sequence of nodes from some starting node to any node in the Tree along the parent-child connections. The path must contain at least one node and does not need to go through the root.
 
     Example 1:
 
@@ -39,7 +39,7 @@ public class L123_H {
         return gMax;
     }
 
-    // dfs sortalgo to compute the maximum path value including this node
+    // DFS SortAlgo to compute the maximum path value including this node
     private int dfs(TreeNode node) {
         if (node == null) return 0;
         int left = dfs(node.left);

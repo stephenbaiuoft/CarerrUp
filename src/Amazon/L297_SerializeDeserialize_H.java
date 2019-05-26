@@ -3,7 +3,7 @@ import java.sql.Struct;
 import java.util.*;
 
 
-// understad the importance of pre-order and sortalgo
+// understad the importance of pre-order and SortAlgo
 // because apparently u always!! needs to root node
 public class L297_SerializeDeserialize_H {
 
@@ -60,7 +60,7 @@ public class L297_SerializeDeserialize_H {
     }
 
 
-    // Decodes your encoded data to tree.
+    // Decodes your encoded data to Tree.
     public TreeNode deserialize(String data) {
         String[] nodeArray = data.split(Splitter);
         treeQueue = new LinkedList(Arrays.asList(nodeArray));
@@ -69,7 +69,7 @@ public class L297_SerializeDeserialize_H {
         return treeHead;
     }
 
-    // build a tree by assigning the treeHead
+    // build a Tree by assigning the treeHead
     private TreeNode buildDeserializedTree(){
         if(!treeQueue.isEmpty()){
             String removal = treeQueue.removeFirst();

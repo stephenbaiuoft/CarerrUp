@@ -6,7 +6,7 @@ package Amazon;
  Example 1:
 
  Input:
- "tree"
+ "Tree"
 
  Output:
  "eert"

@@ -3,20 +3,20 @@ package Microsoft;
  *
  * Follow up for problem "Populating Next Right Pointers in Each Node".
 
- What if the given tree could be any binary tree?
+ What if the given Tree could be any binary Tree?
  Would your previous solution still work?
 
  Note:
 
  You may only use constant extra space.
  For example,
- Given the following binary tree,
+ Given the following binary Tree,
      1
     /  \
    2    3
   / \    \
  4   5    7
- After calling your function, the tree should look like:
+ After calling your function, the Tree should look like:
 
      1 -> NULL
     /  \

@@ -21,11 +21,11 @@ Explanation: nums = [3,1,5,8] --> [3,5,8] -->   [3,8]   -->  [8]  --> []
              coins =  3*1*5      +  3*5*8    +  1*3*8      + 1*8*1   = 167
 * */
 
-// 思路 -> dp
+// 思路 -> DP
 // 把len为0， 1， 一直到n-1都算出来
-// 注意 你dp的定义 dp[i][j] 是 maximum amount you can get between [i,j] inclusively!
-// 所以举个例子 dp[2][6] 当len = 4的时候 肯定是建立于 之前的打dp的运算结果
-// 这时候 你可以选择 a[1]* a[burstChoice]*a[7]  + dp[1][1] + dp[7][n]的运算结果
+// 注意 你dp的定义 DP[i][j] 是 maximum amount you can get between [i,j] inclusively!
+// 所以举个例子 DP[2][6] 当len = 4的时候 肯定是建立于 之前的打dp的运算结果
+// 这时候 你可以选择 a[1]* a[burstChoice]*a[7]  + DP[1][1] + DP[7][n]的运算结果
 
 public class L312_BurstBalloons_H {
 
@@ -35,20 +35,20 @@ public class L312_BurstBalloons_H {
         int[] a = new int[n+2];
         // left most and right most all equal to 1
         a[0] = a[nums.length + 1] = 1;
-        // dp used to record the value
-        // dp[i][j] denotes the maximum value you can burst out between i and j inclusively
+        // DP used to record the value
+        // DP[i][j] denotes the maximum value you can burst out between i and j inclusively
         int[][] dp = new int[a.length][a.length];
 
         for (int i = 0; i < n; i++) {
             a[i+1] = nums[i];
         }
 
-        // dp[i][j] denotes the maximum value you can burst out between i and j!!!!!! 超级重要 记得你dp的定义是什么
+        // DP[i][j] denotes the maximum value you can burst out between i and j!!!!!! 超级重要 记得你dp的定义是什么
         for (int len = 0; len <= n; len++) {
             // let's do left and right pairs, with len (left, right)这个pair equal to 0 is okay
             for (int left = 1; left + len <= n; left++) {
                 int rightMost = left + len; // --> 因为 [left,rightMost] so that in this order,
-                // dp[left][right] means the maximum you can get between dp[left][right]
+                // DP[left][right] means the maximum you can get between DP[left][right]
                 // and it is just all the possible burstChoiceOfCurLen, given the current length
                 for(int burstChoiceOfCurLen = left; burstChoiceOfCurLen <=rightMost; burstChoiceOfCurLen++) {
                     dp[left][rightMost] = Math.max(

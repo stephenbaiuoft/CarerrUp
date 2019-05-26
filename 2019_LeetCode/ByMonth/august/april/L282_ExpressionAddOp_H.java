@@ -12,7 +12,7 @@ public class L282_ExpressionAddOp_H {
         return rez;
     }
 
-    // dfs helper s.t it will explore all possibilities
+    // DFS helper s.t it will explore all possibilities
     private void dfsHelper(String num, int pos, int target, String expr, long prev, long curr) {
         // base case
         if (pos == num.length()) {

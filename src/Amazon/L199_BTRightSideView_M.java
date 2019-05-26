@@ -4,11 +4,11 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * Given a binary tree, imagine yourself standing on the right side of it,
+ * Given a binary Tree, imagine yourself standing on the right side of it,
  * return the values of the nodes you can see ordered from top to bottom.
 
  For example:
- Given the following binary tree,
+ Given the following binary Tree,
     1            <---
   /  \
  2    3         <---

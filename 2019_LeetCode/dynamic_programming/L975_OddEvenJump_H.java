@@ -41,8 +41,8 @@ public class L975_OddEvenJump_H {
 
     public int oddEvenJumps(int[] A) {
         if (A == null || A.length == 0) return 0;
-        // dp[i][0] ==> odd index, jump up
-        // dp[j][1] ==> even index, jump down
+        // DP[i][0] ==> odd index, jump up
+        // DP[j][1] ==> even index, jump down
         boolean[][] dp = new boolean[A.length][2];
         // mJump <i, j>: store the minimum index that i index can jump to
         // and init the set
@@ -60,20 +60,20 @@ public class L975_OddEvenJump_H {
             entry = mJump.ceilingEntry(A[i]);
             if (entry != null) {
                 int iJumpUpToJ = entry.getValue();
-                dp[i][0] = dp[iJumpUpToJ][1]; // in dp[j][1] meaning j is jumping down, and j > i
+                dp[i][0] = dp[iJumpUpToJ][1]; // in DP[j][1] meaning j is jumping down, and j > i
             }
 
             entry = mJump.floorEntry(A[i]);
             if (entry != null) {
                 int iJumpDownToK = entry.getValue();
-                dp[i][1] = dp[iJumpDownToK][0]; // in dp[k][0] --> meaning k is jumping up, and k > i
+                dp[i][1] = dp[iJumpDownToK][0]; // in DP[k][0] --> meaning k is jumping up, and k > i
             }
             // update the mJump before returning
             // i is definitely smaller, so A[i] matching would always update to smaller i
             mJump.put(A[i], i);
         }
 
-        // 因为只有jump up才算是valid 所以我们把 sum {dp[i][0]} where dp[i][0] == true
+        // 因为只有jump up才算是valid 所以我们把 sum {DP[i][0]} where DP[i][0] == true
         int tot = 0;
         for (int i = 0; i < A.length; i++) {
             if ( dp[i][0] == true) {

@@ -11,7 +11,7 @@ import java.util.*;
 
 // Yeah Own Solution Works!!!!
 
-// csdn: Non-graph but easier solution!
+// csdn: Non-Graph but easier solution!
 //  http://blog.csdn.net/xudli/article/details/45912519
 
 public class CourseSchedule {
@@ -46,14 +46,14 @@ public class CourseSchedule {
             current.add(prerequisites[i][0]);
         }
 
-        // result to keep track of the order of dfs sequence
+        // result to keep track of the order of DFS sequence
         Stack result = new Stack();
 
         //int[] result = new int[numCourses];
         // visited to keep track of the status of each vertex
         int[] visited = new int[numCourses];
 
-        // now we have linked lists graph presentation
+        // now we have linked lists Graph presentation
         for (int i = 0; i < numCourses; i++) {
             // false if this index does not have any pre-requisites
             /*

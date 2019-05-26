@@ -29,7 +29,7 @@ public class L17_LetterComboPhone_M {
         return mResult;
     }
 
-    // sortalgo method
+    // SortAlgo method
     // length is current length
     private void getString(int index, String str) {
         if (index == this.length ) {

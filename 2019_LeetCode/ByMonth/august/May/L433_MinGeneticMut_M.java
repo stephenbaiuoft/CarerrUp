@@ -13,7 +13,7 @@ public class L433_MinGeneticMut_M {
     }
 
     public int minMutation(String start, String end, String[] bank) {
-        // bfs solution to check # of steps to convert from start to end
+        // BFS solution to check # of steps to convert from start to end
         HashSet<String> bankSet = new HashSet<>();
         for(String s: bank) {
             bankSet.add(s);
@@ -24,7 +24,7 @@ public class L433_MinGeneticMut_M {
                 'A', 'C', 'G', 'T'
         };
 
-        // bfs, we need levelCount
+        // BFS, we need levelCount
         int rezCount= 0;
         int levelCount = 0;
         String cur = null;

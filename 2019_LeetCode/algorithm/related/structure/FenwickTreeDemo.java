@@ -53,12 +53,12 @@ public class FenwickTreeDemo {
         }
 
         private void show() {
-            System.out.println("the tree starting");
+            System.out.println("the Tree starting");
             for(int i = 1; i <= n; i++) {
                 // sum.length > n yeah!!
                 System.out.println(sum[i]);
             }
-            System.out.println("the tree ending");
+            System.out.println("the Tree ending");
 
             for (int i = 1; i<=n; i++) {
                 System.out.println( "up to " + i + " is:" + query(i));

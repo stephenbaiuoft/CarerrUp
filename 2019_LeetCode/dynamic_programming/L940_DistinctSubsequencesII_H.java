@@ -49,9 +49,9 @@ public class L940_DistinctSubsequencesII_H {
         int[] dp = new int[N+1];
         dp[0] = 1;
 
-        // used to store the dp index of the latest last character digit
+        // used to store the DP index of the latest last character digit
         int[] last = new int[26];
-        // do it in dp way
+        // do it in DP way
         for (int i = 1; i <= N; i++) {
             // get the lastCDigit value
             int endDigit = S.charAt(i-1) - 'a';
@@ -59,7 +59,7 @@ public class L940_DistinctSubsequencesII_H {
             // it's value is only from [1,N] possib
             if (last[endDigit] > 0) {
                 // last[endDigit] gives the last index ending with the character
-                // last[endDigit] - 1 gives the dp index before then,
+                // last[endDigit] - 1 gives the DP index before then,
                 // which means in other words --> the number that can be double counted
                 dp[i] -= dp[last[endDigit]-1];
             }
@@ -78,17 +78,17 @@ public class L940_DistinctSubsequencesII_H {
     // 这个就是不算empty set 但是 有一个1的offset 你要注意
     // 如果第一次见到new character 要就要+1
     // 如果不是第一次 那这个+1 就不需要了
-    // dp[i] = 2 * dp[i-1] - dp[last[s[i] - 1] ( last[s[i]] > 0: 就是这个character 已经出现过了
-    //  OR   = 2 * dp[i-1] + 1 //如果这个character是第一次出现
+    // DP[i] = 2 * DP[i-1] - DP[last[s[i] - 1] ( last[s[i]] > 0: 就是这个character 已经出现过了
+    //  OR   = 2 * DP[i-1] + 1 //如果这个character是第一次出现
 
     public int distinctSubseqIIApproach2(String S) {
         int MOD = 1_000_000_007;
         int N = S.length();
         int[] dp = new int[N+1];
-        // used to store the dp index of the latest last character digit
+        // used to store the DP index of the latest last character digit
         int[] last = new int[26];
 
-        // do it in dp way
+        // do it in DP way
         for (int i = 1; i <= N; i++) {
             // get the lastCDigit value
             int endDigit = S.charAt(i-1) - 'a';
@@ -96,7 +96,7 @@ public class L940_DistinctSubsequencesII_H {
             // it's value is only from [1,N] possib
             if (last[endDigit] > 0) { // can't add to it
                 // last[endDigit] gives the last index ending with the character
-                // last[endDigit] - 1 gives the dp index before then,
+                // last[endDigit] - 1 gives the DP index before then,
                 // which means in other words --> the number that can be double counted
                 dp[i] -= dp[last[endDigit]-1];
             } else { // add 1 if for the first time having a new character

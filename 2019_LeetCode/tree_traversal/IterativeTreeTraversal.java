@@ -84,7 +84,7 @@ public class IterativeTreeTraversal {
         Stack<TreeNode> s = new Stack<TreeNode>();
         TreeNode curr = root;
 
-        // traverse the tree
+        // traverse the Tree
         while (curr != null || s.size() > 0)
         {
 
@@ -92,7 +92,7 @@ public class IterativeTreeTraversal {
             curr Node */
             while (curr !=  null)
             {
-                /* place pointer to a tree node on
+                /* place pointer to a Tree node on
                    the stack before traversing
                   the node's left subtree */
                 s.push(curr);

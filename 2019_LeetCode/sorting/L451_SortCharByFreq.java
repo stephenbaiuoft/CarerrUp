@@ -12,7 +12,7 @@ Given a testing.string, sort it in decreasing order based on the frequency of ch
 Example 1:
 
 Input:
-"tree"
+"Tree"
 
 Output:
 "eert"

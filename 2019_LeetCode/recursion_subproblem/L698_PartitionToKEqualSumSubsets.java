@@ -18,14 +18,14 @@ import java.util.Arrays;
 /* 解体思路
     1. every number needs to be in ONE set
     2. all set equal number --> so it is sum/k, and you may not have remainders
-    3. sortalgo, but how(?)
+    3. SortAlgo, but how(?)
 
 假设 这个set的排序存在
 - every number must be in some set
 - so, if we sort the list in smallest to largest order, then we know
     1. a1,.....a_n, then we know if there exists some sub [..., a_n], then when we try to add to the list,
         the sum should not exceed the kAverage
-    2. given its the sum over k brackets, and we define a sortalgo function where
+    2. given its the sum over k brackets, and we define a SortAlgo function where
         public boolean search(int[]groups, int rowIndex, int target), where
     2.1 for the given rowIndex, all indices after rowIndex(going from right the left) has been fitted to some groups for sure
     2.2 so the base case--> if you can put in the last element, then each group must have been evaluated to the average value given

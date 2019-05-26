@@ -32,7 +32,7 @@ public class L301_RemoveInvalidParentheses_H {
     }
 
 
-    // dfs the remaining of the str
+    // DFS the remaining of the str
     // given #_of_leftBrackets AND #_of_rightBrackets to be removed
     private void dfs(String s, int start, int left, int right) {
         if (left == 0 && right == 0  && checkValid(s)) {

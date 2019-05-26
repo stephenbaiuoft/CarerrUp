@@ -10,7 +10,7 @@ import java.util.TreeMap;
  */
 public class MapClassCompare {
     // HashMap: no ordering in keys or values, key can be null, Unique Keys
-    // TreeMap: ordered by tree
+    // TreeMap: ordered by Tree
     // LinkedHashMap: preserves insertion order
     // Hashtable: synchronized, No-null Unique Key
     public MapClassCompare(){

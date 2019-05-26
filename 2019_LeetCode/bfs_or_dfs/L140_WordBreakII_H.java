@@ -78,7 +78,7 @@ public class L140_WordBreakII_H {
         return rez;
     }
 
-    // dfs
+    // DFS
     private void explore(List<String> rez, String s, String curString,
                          HashSet<String> set, int minStart, int maxEnd, int sIndex) {
         // base condition

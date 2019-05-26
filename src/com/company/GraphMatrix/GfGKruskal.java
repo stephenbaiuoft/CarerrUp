@@ -10,11 +10,11 @@ public class GfGKruskal{
     public void run ()
     {
 
-		/* Let us create following weighted graph
+		/* Let us create following weighted Graph
 
 					 */
-        int V = 3; // Number of vertices in graph
-        int E = 3; // Number of edges in graph
+        int V = 3; // Number of vertices in Graph
+        int E = 3; // Number of edges in Graph
         Graph graph = new Graph(V, E);
 
         // add edge 0-1
@@ -40,7 +40,7 @@ public class GfGKruskal{
 
 class Graph
 {
-    // A class to represent a graph edge
+    // A class to represent a Graph edge
     class Edge implements Comparable<Edge>
     {
         int src, dest, weight;
@@ -62,7 +62,7 @@ class Graph
     int V, E; // V-> no. of vertices & E->no.of edges
     Edge edge[]; // collection of all edges
 
-    // Creates a graph with V vertices and E edges
+    // Creates a Graph with V vertices and E edges
     Graph(int v, int e)
     {
         V = v;
@@ -90,7 +90,7 @@ class Graph
         int xroot = find(subsets, x);
         int yroot = find(subsets, y);
 
-        // Attach smaller rank tree under root of high rank tree
+        // Attach smaller rank Tree under root of high rank Tree
         // (Union by Rank)
         if (subsets[xroot].rank < subsets[yroot].rank)
             subsets[xroot].parent = yroot;
@@ -116,7 +116,7 @@ class Graph
             result[i] = new Edge();
 
         // Step 1: Sort all the edges in non-decreasing order of their
-        // weight. If we are not allowed to change the given graph, we
+        // weight. If we are not allowed to change the given Graph, we
         // can create a copy of array of edges
 
         Arrays.sort(edge);

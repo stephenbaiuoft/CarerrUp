@@ -3,7 +3,7 @@ package ByMonth.august.June;
 import java.util.Arrays;
 
 public class L516_LongestPalindromeSub_M {
-    // 2 is memorization (sortalgo back down)
+    // 2 is memorization (SortAlgo back down)
     public int longestPalindromeSubseq2(String s) {
         if (s == null || s.length() == 0) return 0;
         int[][] dp = new int[s.length()][s.length()];
@@ -45,7 +45,7 @@ public class L516_LongestPalindromeSub_M {
         return dp[i][j];
     }
 
-    // 2-d array with dp
+    // 2-d array with DP
     public int longestPalindromeSubseq(String s) {
         // base condition check
         if (s == null || s.length() == 0) return 0;

@@ -13,7 +13,7 @@ class Node{
 public class CheckSubTree {
 
 
-    // the tree starting on every Node
+    // the Tree starting on every Node
     public boolean ifIdentical(Node root, Node subtree){
         if (root == null && subtree == null)
             return true;
