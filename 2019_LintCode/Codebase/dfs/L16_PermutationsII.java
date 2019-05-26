@@ -33,6 +33,8 @@ public class L16_PermutationsII {
             }
             // duplicates like 2_1st, 2_2nd, 1
             //              vs 2_2nd, 2_1st, 1
+            // for this level, nums[i-1] the first one would have been chosen, and we can safely skip the remaining identical ones
+            // 这里很重要 相当于在这一层你不用再选相同的元素了！！！
             if (i > 0 && nums[i-1] == nums[i] && !visited[i-1]) {
                 continue;
             }

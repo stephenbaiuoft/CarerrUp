@@ -33,4 +33,35 @@ public class L912_BestMeetingPoint_H {
 
         return sum;
     }
+
+    public static long solution(long[][] clients) {
+        // Type your solution here
+        if (clients == null || clients.length == 0) return 0L;
+
+        List<Long> xSet = new ArrayList<>();
+        List<Long> ySet = new ArrayList<>();
+
+        for (long[] client: clients) {
+            xSet.add(client[0]);
+            ySet.add(client[1]);
+        }
+
+        return getMinD(xSet) + getMinD(ySet);
+
+    }
+
+    private static long getMinD(List<Long> list) {
+        Collections.sort(list);
+        int left = 0;
+        int right = list.size()-1;
+        long sum = 0;
+
+        while (left < right) {
+            sum += list.get(right) - list.get(left);
+            left ++;
+            right--;
+        }
+
+        return sum;
+    }
 }
