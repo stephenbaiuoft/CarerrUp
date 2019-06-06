@@ -27,7 +27,7 @@ public class L72_MinDistance_M {
                     int c1 = dp[i][j-1];
                     // delete a new character of word1, so i-1 matches j-1
                     int c2 = dp[i-1][j];
-                    // replace a new character of word1, so i-1 matches j-1 && i matches j
+                    // replace a new character of word1, so i-1 matches j-1 && i matches j with REPLACEMENT of cost 1
                     int c3 = dp[i-1][j-1];
                     // and the cost for all 3 is 1
                     dp[i][j] = Math.min(Math.min(c1,c2), c3) + 1;

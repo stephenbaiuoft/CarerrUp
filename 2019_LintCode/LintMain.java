@@ -3,7 +3,8 @@ import UnionFind.L434_NumberOfIslandsII;
 
 public class LintMain {
     public static void main(String[] args) {
-        L434_NumberOfIslandsII p = new L434_NumberOfIslandsII();
+        TestSpace p = new TestSpace();
+//        L434_NumberOfIslandsII p = new L434_NumberOfIslandsII();
 
 //        L676_DecodeWaysII p = new L676_DecodeWaysII();
 //        L516_PaintHouseII p = new L516_PaintHouseII();
