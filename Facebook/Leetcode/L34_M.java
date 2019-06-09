@@ -70,7 +70,7 @@ public class L34_M {
     private int findUpperBound(int[] nums, int target) {
         int left = 0, right = nums.length - 1;
         while(left < right && left != right -1) { // must ==> left != right -1 因为 mid = left + (right -left)/2 and 存在infinite loop的情况
-            int mid = left + (right -left) / 2;
+            int mid = left + (right -left) / 2; // 这里 你考虑 left=0, right=1, mid = 0+(1)/2 = 0 always!!! with first if true
             if (nums[mid] <= target) {
                 left = mid;
             }
@@ -79,6 +79,7 @@ public class L34_M {
                 right = mid - 1;
             }
         }
+        // 这里的terminate的情况！！！
         return nums[right] == target? right: left; //所以最后 查一查 到底是 right 等于target还是left 等于target 毕竟可以在 left = right -1的情况 terminate
     }
 }

@@ -21,7 +21,7 @@ public class L315_CountSmaller_H {
         List<Integer> list = new LinkedList<>();
 
         HashMap<Integer, Integer> map = new HashMap<>();
-        Arrays.sort(copy); // ascending order ==> n(logn)
+        Arrays.sort(copy); // ascending order ==> n(logn) 小到大排序
         int rank = 1;
         for(int i = 0; i < copy.length; i++) {
             // map value to rank
@@ -44,7 +44,7 @@ public class L315_CountSmaller_H {
             // get the current value's rank
             curRank = map.get(nums[i]);
             // update the freqTable
-            freqTable[curRank]++;
+            freqTable[curRank]++; //代表有几个数字  因为允许重复
 
             // remember the offset so -1 to query results up to curRank (excluding curRank)
             list.add(fTree.query(curRank-1));

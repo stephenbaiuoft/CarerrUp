@@ -100,7 +100,7 @@ class City_Connections {
 public class SolutionMSTKruskal{
     public SolutionMSTKruskal(){
         ArrayList<Connection> connections = new ArrayList<>();
-        //这里还是一个苯环形状，有化学出身的看到这里可以鼓掌了
+
         connections.add(new Connection("A","B",6));
         connections.add(new Connection("B","C",4));
         connections.add(new Connection("C","D",5));

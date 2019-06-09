@@ -1,0 +1,125 @@
+package OOD;
+
+//https://www.jiuzhang.com/solution/coffee-maker-oo-design/
+/*
+*
+Can you design a coffee maker, that take a coffee pack, and can simply make a cup of coffee.
+
+Coffee pack contains the recipe of the coffee, like how many milk / how many sugar to be added in the coffee
+Coffee maker can make coffee based on the recipe provided by the coffee pack
+Only consider 2 type of ingredients: sugar and milk
+the cost of Plain coffee is 2. Add one portion of milk/sugar will increase the cost by 0.5
+
+
+Consider use decorator design pattern!!!!!
+
+* */
+
+public class CoffeeMaker {
+    public void run() {
+        CoffeePack cp = new CoffeePack(3,5);
+        Coffee rez = makeCoffee(cp);
+        System.out.println(rez.getIngredients());
+        System.out.println(rez.getCost());
+
+    }
+
+    public Coffee makeCoffee(CoffeePack pack) {
+        Coffee coffee = new SimpleCoffee();
+
+        for (int i = 0; i < pack.getNeededMilk(); i++) {
+            coffee = new WithMilk(coffee);
+        }
+
+        for (int i = 0; i < pack.getNeededSugar(); i++) {
+            coffee = new WithSugar(coffee);
+        }
+
+        return coffee;
+    }
+}
+
+class CoffeePack {
+    private int neededMilk;
+    private int neededSugar;
+
+    public CoffeePack(int neededMilk, int neededSugar) {
+        this.neededMilk = neededMilk;
+        this.neededSugar = neededSugar;
+    }
+
+    public int getNeededMilk() {
+        return neededMilk;
+    }
+
+    public int getNeededSugar() {
+        return neededSugar;
+    }
+}
+
+interface Coffee {
+    public double getCost();
+    public String getIngredients();
+}
+
+class SimpleCoffee implements Coffee {
+
+    @Override
+    public double getCost() {
+        // TODO Auto-generated method stub
+        return 2;
+    }
+
+    @Override
+    public String getIngredients() {
+        // TODO Auto-generated method stub
+        return "Plain Coffee";
+    }
+
+}
+
+abstract class CoffeeDecorator implements Coffee {
+    protected final Coffee decoratedCoffee;
+
+    public CoffeeDecorator(Coffee coffee) {
+        this.decoratedCoffee = coffee;
+    }
+
+    public double getCost() {
+        return decoratedCoffee.getCost();
+    }
+
+    public String getIngredients() {
+        return decoratedCoffee.getIngredients();
+    }
+}
+
+class WithMilk extends CoffeeDecorator {
+
+    public WithMilk(Coffee coffee) {
+        super(coffee);
+    }
+
+    public double getCost() {
+        return super.getCost() + 0.5;
+    }
+
+    public String getIngredients() {
+        return super.getIngredients() + ", Milk";
+    }
+}
+
+class WithSugar extends CoffeeDecorator {
+
+    public WithSugar(Coffee coffee) {
+        super(coffee);
+    }
+
+    public double getCost() {
+        return super.getCost() + 0.5;
+    }
+
+    public String getIngredients() {
+        return super.getIngredients() + ", Sugar";
+    }
+}

@@ -39,21 +39,22 @@ public class L437_E {
 
     }
 
-
+    // with or without for pathSum, and each node with pathSumWith, with pathSum to
+    // make its higher state?
     public int pathSum(TreeNode root, int sum) {
         if (root == null) return 0;
         //!!!! note pathSum(root.left, sum)!!!!!! INSTEAD OF helper!!!!!!!!
-        return pathSumFrom(root, sum) + pathSum(root.left, sum) + pathSum(root.right, sum);
+        return pathSumWith(root, sum) + pathSum(root.left, sum) + pathSum(root.right, sum);
     }
 
-    // return # of path up to this node
-    private int pathSumFrom(TreeNode node, int remain) {
+    // return # of path with this node
+    private int pathSumWith(TreeNode node, int remain) {
         // base case
         if (node == null) return 0;
         // whether this node is the one we look for
         int c = remain == node.val? 1: 0;
-        int left = pathSumFrom(node.left, remain - node.val);
-        int right = pathSumFrom(node.right, remain - node.val);
+        int left = pathSumWith(node.left, remain - node.val);
+        int right = pathSumWith(node.right, remain - node.val);
 
         return c + left + right;
     }

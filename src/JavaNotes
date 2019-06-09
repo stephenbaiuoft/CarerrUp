@@ -12,6 +12,13 @@
         V.S
    Foo<T> f is a type parameter
 
+4.0 Comparator Lambda Expression
+
+        PriorityQueue<String> pq = new PriorityQueue<String>((a,b)->{
+            return map.get(a) - map.get(b);
+        });
+
+
 4. Comparator Syntax Implementation:
 
    class mycomparator implements Comparator<Player> {
