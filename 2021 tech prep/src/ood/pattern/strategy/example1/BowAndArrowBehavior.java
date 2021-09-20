@@ -1,6 +1,6 @@
-package ood.design.strategy.example1;
+package ood.pattern.strategy.example1;
 
-public class BowAndArrowBehavior implements WeaponBehavior{
+public class BowAndArrowBehavior implements WeaponBehavior {
     @Override
     public void useWeapon() {
         System.out.println("Use a bow and arrow");

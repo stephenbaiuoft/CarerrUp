@@ -1,4 +1,4 @@
-package ood.design.strategy.example1;
+package ood.pattern.strategy.example1;
 
 public class DemoExample1 {
     public static void run() {

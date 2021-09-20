@@ -1,4 +1,4 @@
-import ood.design.strategy.example1.DemoExample1;
+import ood.pattern.strategy.example1.DemoExample1;
 
 public class OODMain {
     public static void main(String[] args) {

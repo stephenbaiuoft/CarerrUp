@@ -1,0 +1,19 @@
+### Structure
+
+Component (Abstract Class): Defines state (variable + methods)
+ConcreteComponent (Impments the Abstract Class)
+Decorator (Abstract Class that extends Component) -> this is essentially a base extension for Decorator Implementations
+
+ConcreteDecorator (Wrapper of Component)
+- Composition with Component by having an instance variable (that takes Compoment variable)
+
+
+
+### Questions && A
+- For a specific concrete component, say, HouseBlend, and do something, like issue a discount.
+Once i've wrapped the HouseBlend with decorators, this isn't going to work anymore
+ - That's right. If you have code that relies on the concrete component's type, decorators will break that code.
+ - As long as you only write code against the abstract component type, the use of decorators will remain transparent
+
+
+

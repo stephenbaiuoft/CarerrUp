@@ -1,0 +1,16 @@
+### The main idea
+- Has a over Is a
+ - This just means Composition over inheritance
+- Interface is associated with the base class
+ - However you have behavior classes that implement interface
+ - you then have sub classes that extends base class
+ Through setter method, the sub class will determine their behavior at runtime
+
+### Great flexibility
+
+### Official definition
+Strategy Pattern design
+ - defines a family of algorithms
+ - it then encapsulates each algorithm
+ - it makes each one interchangeable
+ - Strategy lets the algorithm vary independently from clients that use it
