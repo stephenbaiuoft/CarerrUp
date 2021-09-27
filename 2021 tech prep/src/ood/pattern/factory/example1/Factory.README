@@ -1,0 +1,42 @@
+### Notes
+Encapsulates object creation within a factory class.
+This class holds the logic so that in your client code, so we don't have implementation code in client
+(where you are using the code)
+
+### There are 2 types
+- Factory Method
+ - If you don't know all the products ahead of time, USE This pattern
+ - Use inheritance to create objects (abstract factory first, implementation factory to create a product)
+ - that product is an abstract, and some implementation product of the implementation factory will genenrate
+
+- Abstract Factory
+ - Use it whenever you have a family of products, and you'd like to keep client (whoever wants to get a product) create products that belong together
+
+
+
+The Factory Method Pattern
+- Defines an interface for creating an object
+- BUT lets subclasses decide which class to instantiate
+- Factory method lets a class defer instantiation to subclasses
+
+Advantage of Factory Method Pattern
+- the creator is abstract
+- one concrete creator because you are decoupling the implementation of the product from its use
+- you can change/add a product's implementation, and will not affect the creator
+
+Dependency INVERSION Principle
+- Depend upon abstractions. Do not depend upon concrete classes
+- This means high-level AND low-level components should BOTH depend on abstract classes
+ - high-level component is a class with behaviors defined in terms of other low level components
+ - PizzaStore
+  - its behavior is defined in terms of pizzas (low-level components)
+  - PizzaStore creates all different pizza objects, prepares, bakes, cuts, and boxes them
+
+
+Notes on Dependency Inversion Principle
+- No variable should hold a reference to a concrete class (No ConcreteClass myClassA = ); use factory to get around it?
+ - See IngredientFactory in Pizza abstract class to produce the relevant Dough class and etc
+- No class should derive from a concrete class. You SHOULD ALWAYS derive from an abstraction/interface
+- No method should override an implemented method of any of its base classes
+ - if you override an implemented method, then your  base class wasn't really an abstraction to start with
+ - these methods are meant to be shared by all classes (Remember future classes too)!

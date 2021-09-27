@@ -14,6 +14,7 @@ public class LowerClassInputStream extends FilterInputStream {
     // this is important as this is how decorator is able to rely on the instance info
 
     // We can use super instead of having a InputStream instance in the class
+    // FilterInputStream is the decorator abstract class that EXTENDS InputStream
     public int read() throws IOException {
         // This is the int character representation
         int c = super.read();
