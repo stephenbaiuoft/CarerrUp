@@ -37,7 +37,7 @@ public class L125_BackPackII {
                 else if (A[i-1] <= capacity) {
                     dp[i][capacity] = Math.max(
                             dp[i-1][capacity], // Don't put in this value previous max value
-                            dp[i-1][capacity - A[i-1]] + V[i-1] // Put this value in, then
+                            dp[i-1][capacity - A[i-1]] + V[i-1] // Put this value in, then 上一个最高的是多少
                     );
                 }
 

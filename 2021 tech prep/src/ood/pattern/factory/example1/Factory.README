@@ -7,7 +7,7 @@ This class holds the logic so that in your client code, so we don't have impleme
 - Factory Method
  - If you don't know all the products ahead of time, USE This pattern
  - Use inheritance to create objects (abstract factory first, implementation factory to create a product)
- - that product is an abstract, and some implementation product of the implementation factory will genenrate
+ - that product is an abstract, and some implementation product of the implementation factory will generate
 
 - Abstract Factory
  - Use it whenever you have a family of products, and you'd like to keep client (whoever wants to get a product) create products that belong together

@@ -1,6 +1,7 @@
 import algorithm.related.design.L528_RandomPickWithWeight_M;
 import algorithm.related.structure.L315_CountSmaller_H;
 import algorithm.related.structure.NumArray;
+import bfs_or_dfs.L127_WordLadder_M;
 import bfs_or_dfs.L947_MostStonesRemovedWithSameRowOrCol_M;
 import binarysearch.L475_Heaters_E;
 import binarysearch.binary_search_test;
@@ -10,6 +11,7 @@ import custom_data_structure.L900_RLEIterator_M;
 import custom_data_structure.MyCalendarTwo;
 import dynamic_programming.L135_Candy_H;
 import dynamic_programming.L562_LongestLineOfConsecutiveOneInMatrix_M;
+import dynamic_programming.L740_deleteAndEarn;
 import dynamic_programming.L940_DistinctSubsequencesII_H;
 import heap_minqueue.L857_MinCostKWorkers_H;
 import recursion_subproblem.L25_ReverseNodesInKGroup_H;
@@ -22,6 +24,7 @@ import string_processing.L809_ExpressiveWords_M;
 import tree_traversal.L222_CountCompleteTreeNodes_M;
 import twopointers.hashmap.string.L18_4Sum_M;
 import twopointers.hashmap.string.L833_FindAndReplaceInString_M;
+import union_find.L684_M;
 
 
 import java.util.*;
@@ -31,7 +34,10 @@ public class CurrentMain {
     private TestClass testClass = new TestClass();
 
     public static void main(String[] args) {
-        L25_ReverseNodesInKGroup_H p =new L25_ReverseNodesInKGroup_H();
+        L740_deleteAndEarn L740 = new L740_deleteAndEarn();
+//        L127_WordLadder_M l127 = new L127_WordLadder_M();
+//        L684_M l684 = new L684_M();
+//         L25_ReverseNodesInKGroup_H p =new L25_ReverseNodesInKGroup_H();
 //        L394_DecodeString_M p = new L394_DecodeString_M();
 //        L973_KClosestPoints_M p = new L973_KClosestPoints_M();
 //        NumArray p = new NumArray();
