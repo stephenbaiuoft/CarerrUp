@@ -40,6 +40,9 @@ public class L5_LongestPalindrome_M {
     *
     * */
 
+
+    // The following is not correct as of 2021-12-28th
+    // this is Topdown??
     int[][] dpTable = null;
 
     public String longestPalindrome(String s) {

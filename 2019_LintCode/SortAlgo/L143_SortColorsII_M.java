@@ -7,7 +7,7 @@ public class L143_SortColorsII_M {
         int pivot = nums[mid];
         int left = lower, right = upper;
         while (left <= right) {
-            // skip the good entires
+            // skip the good entries
             while (left <= right && nums[left] < pivot) {
                 left++;
             }
