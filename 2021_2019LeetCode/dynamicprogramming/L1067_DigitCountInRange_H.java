@@ -65,10 +65,21 @@ public class L1067_DigitCountInRange_H {
                 // unBounded 因为 curD是 [0, To] 之中
                 // 不可能出现 leadingZero = true, and To = 0 的情况 因为i是从significant开始的， to > 0 在这个情况
                 res += helper(d, bounds, i + 1, count, true, false, dp);
-            } else { // !hasLeadingZero, leadingZero will always be false
+            } else {
+                // For the following cases, it doesn't not matter for the conditions at all
+                // WE ONLY CARE ABOUT
+                // 1. hasLeadingZero = false --> ALWAYS FALSE IN THIS CASE
+                // 2. hasDigitBound -> THIS ALWAYS DEPENDS ON (curD == to) && hasDigitBound!!!!! (to is the max really)
+
+                // NOW THEY WAY IT'S INCREMENTED
+                // count表示 这个d 以及在index i这个位置 出现了多少次
+                // 所有的count都是最后结算的，
+                // 最后的条件是？ i == bounds.size  比如 d = 1, 然后我们111.X count = 3, 112.X, count = 2, 因为i starts from 0, i == bounds.size()是结算条件
+
 
                 // !hasLeadingZero && curD == 0,1,2,3,4, to some X other than d
                 // !hasLeadingZero && curD == d (your desired target)
+                // hasLeadingZero with some curD????
 
                 // curD != to, so the next digit will not have digit bound,
                 // 因为 比如 curD = 1, to = 2, 下一位用x表示 那么  1X - 2X， X就会是unbounded
