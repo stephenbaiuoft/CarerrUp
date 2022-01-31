@@ -1,4 +1,4 @@
-package dynamic_programming;
+package dynamicprogramming;
 
 /*
 Given n balloons, indexed from 0 to n-1.

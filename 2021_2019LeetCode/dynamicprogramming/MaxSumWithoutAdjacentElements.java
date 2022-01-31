@@ -1,4 +1,4 @@
-package dynamic_programming;
+package dynamicprogramming;
 
 /*
 Available: https://www.interviewbit.com/problems/max-sum-without-adjacent-elements/

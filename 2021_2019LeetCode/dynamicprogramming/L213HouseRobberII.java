@@ -1,6 +1,4 @@
-package dynamic_programming;
-
-import java.util.Arrays;
+package dynamicprogramming;
 
 public class L213HouseRobberII {
     /**

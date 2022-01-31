@@ -1,4 +1,4 @@
-package dynamic_programming;
+package dynamicprogramming;
 
 import java.util.HashSet;
 import java.util.LinkedList;

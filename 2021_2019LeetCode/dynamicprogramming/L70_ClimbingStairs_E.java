@@ -1,4 +1,4 @@
-package dynamic_programming;
+package dynamicprogramming;
 
 // Characterize the structure of optimal solution (Define that optimal f)
 // Recursively define the value of an optimal solution f(n) = some mathematics of f(n1), f(n2) and etc, where n1, n2 < n

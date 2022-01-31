@@ -1,4 +1,4 @@
-package dynamic_programming;
+package dynamicprogramming;
 
 public class L418_SentenceScreenFitting_M {
 

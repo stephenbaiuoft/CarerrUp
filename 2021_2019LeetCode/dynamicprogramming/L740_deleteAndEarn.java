@@ -1,9 +1,4 @@
-package dynamic_programming;
-
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.Map;
+package dynamicprogramming;
 
 public class L740_deleteAndEarn {
     /**

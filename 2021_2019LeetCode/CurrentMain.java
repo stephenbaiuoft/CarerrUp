@@ -1,42 +1,20 @@
-import algorithm.related.design.L528_RandomPickWithWeight_M;
-import algorithm.related.structure.L315_CountSmaller_H;
-import algorithm.related.structure.NumArray;
-import bfs_or_dfs.L127_WordLadder_M;
-import bfs_or_dfs.L947_MostStonesRemovedWithSameRowOrCol_M;
-import binarysearch.L475_Heaters_E;
-import binarysearch.binary_search_test;
-import com.company.TestClass;
 import common.data.types.TreeNode;
-import custom_data_structure.L900_RLEIterator_M;
-import custom_data_structure.MyCalendarTwo;
-import dynamic_programming.L135_Candy_H;
-import dynamic_programming.L562_LongestLineOfConsecutiveOneInMatrix_M;
-import dynamic_programming.L740_deleteAndEarn;
-import dynamic_programming.L940_DistinctSubsequencesII_H;
-import heap_minqueue.L857_MinCostKWorkers_H;
-import palindrome.L5LongestPalindromicSubstring;
-import recursion_subproblem.L25_ReverseNodesInKGroup_H;
-import sorting.L973_KClosestPoints_M;
-import sorting.algo.quickSort;
-import stack_array_property.L394_DecodeString_M;
-import string_processing.CustomSortString_M;
-import string_processing.L316_RemoveDuplicateLetters;
-import string_processing.L524_LongestWordInDicThroughDeleting_M;
-import string_processing.L809_ExpressiveWords_M;
-import tree_traversal.L222_CountCompleteTreeNodes_M;
-import twopointers.hashmap.string.L18_4Sum_M;
-import twopointers.hashmap.string.L833_FindAndReplaceInString_M;
-import union_find.L684_M;
+import dynamicprogramming.L1067_DigitCountInRangeNonWorking_H;
+import dynamicprogramming.L1067_DigitCountInRange_H;
 
 
 import java.util.*;
 
 public class CurrentMain {
     // testClass to try out java cases
-    private TestClass testClass = new TestClass();
 
     public static void main(String[] args) {
-        quickSort q = new quickSort();
+        L1067_DigitCountInRange_H p = new L1067_DigitCountInRange_H();
+//        Lint563_Backpack4 lt563 = new Lint563_Backpack4();
+//        Lint92_Backpack Lt92=  new Lint92_Backpack();
+//        L324WiggleSort w = new L324WiggleSort();
+//        L312BurstBalloons l312 = new L312BurstBalloons();
+//        quickSort q = new quickSort();
 //        L5LongestPalindromicSubstring L5 = new L5LongestPalindromicSubstring();
 //        L740_deleteAndEarn L740 = new L740_deleteAndEarn();
 //        L127_WordLadder_M l127 = new L127_WordLadder_M();

@@ -1,4 +1,4 @@
-package dynamic_programming;
+package dynamicprogramming;
 
 public class L849_MaxDistanceSitting_E {
     public L849_MaxDistanceSitting_E() {

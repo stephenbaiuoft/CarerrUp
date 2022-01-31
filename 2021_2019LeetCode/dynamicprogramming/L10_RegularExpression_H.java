@@ -1,7 +1,4 @@
-package dynamic_programming;
-
-import java.util.HashSet;
-import java.util.List;
+package dynamicprogramming;
 
 /*
 * Given an input string (s) and a pattern (p), implement regular expression matching with support for '.' and '*'.

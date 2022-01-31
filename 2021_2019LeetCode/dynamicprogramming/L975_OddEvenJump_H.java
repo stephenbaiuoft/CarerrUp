@@ -1,4 +1,4 @@
-package dynamic_programming;
+package dynamicprogramming;
 
 /*
 *
@@ -32,8 +32,6 @@ In total, there are 2 different starting indexes (i = 3, i = 4) where we can rea
 * */
 
 
-import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.Map;
 import java.util.TreeMap;
 
