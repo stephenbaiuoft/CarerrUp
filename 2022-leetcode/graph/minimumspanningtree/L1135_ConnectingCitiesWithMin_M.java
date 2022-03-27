@@ -2,7 +2,9 @@ package graph.minimumspanningtree;
 
 import java.util.*;
 
+
 public class L1135_ConnectingCitiesWithMin_M {
+
     public static void main(String[] args) {
         L1135_ConnectingCitiesWithMin_M p = new L1135_ConnectingCitiesWithMin_M();
     }
@@ -20,7 +22,10 @@ public class L1135_ConnectingCitiesWithMin_M {
     // https://leetcode.com/problems/connecting-cities-with-minimum-cost/
 
     /**
-     * There are n cities labeled from 1 to n. You are given the integer n and an array connections where connections[i] = [xi, yi, costi] indicates that the cost of connecting city xi and city yi
+     * PRIM'S ALGORITHM
+     *
+     * There are n cities labeled from 1 to n. You are given the integer n and an array connections where connections[i] = [xi, yi, costi]
+     * indicates that the cost of connecting city xi and city yi
      * (bidirectional connection) is costi.
      *
      * Return the minimum cost to connect all the n cities such that there is at least one path between each pair of cities. If it is impossible to connect all the n cities, return -1,

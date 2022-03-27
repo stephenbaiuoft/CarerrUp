@@ -43,7 +43,6 @@ public class L787_CFlightsWithKStops_M {
         minHeap.offer(new int[]{src, 0, 0});
 
         while (!minHeap.isEmpty()) {
-
             int[] info = minHeap.poll();
             int node = info[0], stops = info[2], cost = info[1];
 

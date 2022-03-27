@@ -1,13 +1,13 @@
 https://www.youtube.com/watch?v=_lHSawdgXpI&ab_channel=MichaelSambol
 Dijkstra ->
- -> Find the minimum distance from a GIVEN SOURCE TO ANOTHER NODe!!!!!!!
+ -> Find the minimum distance from a GIVEN SOURCE TO ANOTHER ONE!!!!!!!
 
 - minQueue to store nodes reachable so far, sorted by edge weight to each node
 - initially, minQueue put in the source node, with weight = 0, and destination to source itself (it's okay to itself because graph doesn't have this link)
 minDist array to store result
 While minQueue is not empty
 => curNode = Poll from the minQueue
- -> Get all its neighbors reachable from this node (Given it's a DAG, do not worry about infinite loop)
+ -> Get all its neighbors reachable from this node (NO WORRY INFINITE WHEN YOU RELAX AND ADD ONLY SMALLER VALUE && vertices will be explored)
   -> Relax all neighbors nodes with updated min cost to get to those neighbors
    - minDist for the neighbor node
    - update minDist through relax

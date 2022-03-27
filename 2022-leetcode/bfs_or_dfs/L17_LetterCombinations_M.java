@@ -25,6 +25,11 @@ Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 * 只不过这里 --> 你用了string 然后每一次其实都是一个copy
 * */
 public class L17_LetterCombinations_M {
+    public static void main(String[] args) {
+        L17_LetterCombinations_M p = new L17_LetterCombinations_M();
+        p.letterCombinations("23");
+     }
+
     public List<String> letterCombinations(String digits) {
         List<String> list = new LinkedList<>();
         if (digits == null || digits.length() == 0) return list;
